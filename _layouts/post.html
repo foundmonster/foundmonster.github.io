@@ -2,7 +2,8 @@
 layout: default
 ---
 
-# {{ post.title }}
+<h1>{{ post.title }}</h1>
+{{ post.date | date: "%B %e, %Y" }}
 <br>
 {{ content }}
 
