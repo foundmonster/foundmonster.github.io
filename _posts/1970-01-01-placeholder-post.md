@@ -5,6 +5,5 @@ subtitle: Hm...
 ---
 
 # {{ post.title }}
-## {{ post.subtitle }}
 
-This is also a test.
+This is also a test. {{ post.title }}
