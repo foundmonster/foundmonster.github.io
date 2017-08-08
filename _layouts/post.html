@@ -2,8 +2,9 @@
 layout: default
 ---
 
-{{ post.title }}
-{{ post.date | date: "%B %e, %Y" }}
-<br>
+{% if post.title %}
+<h1>{{ post.title }}</h1>
+{% endif %}
+
 {{ content }}
 

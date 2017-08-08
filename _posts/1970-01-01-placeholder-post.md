@@ -5,5 +5,3 @@ subtitle: Hm...
 ---
 
 This is also a test.	
-{{ post.title }}	
-{{ post.date | date: "%B %e, %Y" }}
