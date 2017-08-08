@@ -1,7 +1,7 @@
 ---
 layout: post
 title: And here we go.
-subtitle: Hm...
+subtitle: Hm ... !
 ---
 
 This is also a test.	
