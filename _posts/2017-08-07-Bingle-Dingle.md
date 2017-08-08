@@ -4,6 +4,9 @@ title: Formatting Testing Ground
 subtitle: Hm ... ?
 ---
 
+<h1>Formatting Testing Ground</h1>
+<h3>Let's break this sh!t!</h3>
+
 I don't think you can pull in the title and date using post.title stuff. 
 
 <h1>Header One</h1>
