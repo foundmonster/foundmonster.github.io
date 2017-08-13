@@ -1,14 +1,11 @@
 ---
 layout: post
-title: Formatting Testing Ground
+title: Intro
 subtitle: Hm ... ?
 ---
 
-<h1>Formatting Testing Ground</h1>
-<h3>Let's break this sh!t!</h3>
-
-I don't think you can pull in the title and date using post.title stuff. 
-
+Welcome to my Github hosted Jekyll site. I plan to build this site out into a portfolio for myself. Right now, I'm learning and testing how all of this works. I'm very new to this stuff, so be gentle.<br>
+<br>
 <h1>Header One</h1>
 
 <h2>Header Two</h2>
