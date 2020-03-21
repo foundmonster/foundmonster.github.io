@@ -4,11 +4,9 @@ title: 🤓
 ---
 
 <h1>Cory Malnarick<br></h1>
-<h2>Designer in San Francisco</h2><br>
-
-I currently work at <a href="http://www.criticalmass.com">Critical Mass</a> as a User Experience Architect.<br>
+<h2>Designer in San Francisco</h2>
 <br>
-In the past, I've worked as an Experience Designer at VSA Partners, Torque Digital, World Bicycle Relief, and General Assembly.<br>
+I currently work at <a href="http://www.apple.com">Apple</a> as a UX Designer.<br>
 <br>
 <a href="mailto:cory.malnarick@gmail.com">email</a> ↗︎<br>
 <a href="https://www.linkedin.com/in/cmalnarick">linkedin</a> ↗︎<br>
@@ -19,6 +17,9 @@ In the past, I've worked as an Experience Designer at VSA Partners, Torque Digit
 <h3>–––<br>
 Recent posts:</h3>
 {% for post in site.posts %}
+
+    {{ post.date | date: "%B %e, %Y" }}
+    <a href="{{ post.url }}">{{ post.title }}</a><br>
 
     {{ post.date | date: "%B %e, %Y" }}
     <a href="{{ post.url }}">{{ post.title }}</a><br>
