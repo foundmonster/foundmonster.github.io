@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Intro
-subtitle: Hm ... ?
 ---
 
 Welcome to my Github hosted Jekyll site. I plan to build this site out into a portfolio for myself. Right now, I'm learning and testing how all of this works. I'm very new to this stuff, so be gentle.<br>
