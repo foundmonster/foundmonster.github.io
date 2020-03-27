@@ -1,3 +1,24 @@
+body {
+        margin: 0;
+        padding: 40px;
+        font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+        max-width: 28rem;
+        margin: auto;
+        background-color: #EFEFF4;
+      }
+
+a:link {
+  color: #EFEFF4;
+}
+
+a:visited {
+  color: #EFEFF4;
+}
+
+a:active {
+  color: white;
+}
+
 .current {
 	color: green;
 }
@@ -13,7 +34,6 @@
 	font-color: #EFEFF4;
 	border-radius: 4px;
 	background-color: #333;
-
 }
 
 .container {
