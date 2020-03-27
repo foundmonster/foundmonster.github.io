@@ -8,19 +8,19 @@ body {
       }
 
 h1, h2, h3, h4, h5, h6 {
-        margin-top: 100px;
+        margin-top: 24px;
         }
 
 a:link {
-  color: red;
+  border-bottom: #bb4e20;
 }
 
 a:visited {
-  color: blue;
+  color: #bb4e20;
 }
 
 a:active {
-  color: green;
+  opacity: 0.2;
 }
 
 .navspacing {
@@ -33,7 +33,7 @@ a:active {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
-	font-color: #EFEFF4;
+	font-color: #EFEFF4!important;
 	border-radius: 4px;
 	background-color: #333;
 }
