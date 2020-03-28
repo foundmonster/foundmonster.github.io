@@ -24,7 +24,7 @@ a:link {
 
 a:visited {
 	text-decoration: none;
-	color: #bb4e20;
+	color: black;
 }
 
 	.navbutton a:visited {
@@ -45,10 +45,11 @@ a:active {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
-	font-color: #EFEFF4!important;
-	color: #EFEFF4!important;
+	font-color: #333!important;
+	color: #333!important;
 	border-radius: 4px;
-	background-color: #333;
+	border-color: #333;
+	background-color: #EFEFF4;
 }
 
 .container {
