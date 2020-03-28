@@ -5,11 +5,11 @@ body {
         max-width: 28rem;
         margin: auto;
         background-color: #EFEFF4;
-      }
+}
 
 h1, h2, h3, h4, h5, h6 {
         margin-top: 24px;
-        }
+}
 
 a:link {
 	text-decoration: none;
@@ -17,11 +17,16 @@ a:link {
 }
 
 a:visited {
-  text-decoration: none;
+	text-decoration: none;
+	font-color: #bb4e20;
+}
+
+.navbutton a:visited {
+	font-color: inherit;
 }
 
 a:active {
-  opacity: 0.2;
+	opacity: 0.2;
 }
 
 .navspacing {
@@ -40,5 +45,5 @@ a:active {
 }
 
 .container {
-  max-width: 28rem;
+	max-width: 28rem;
 }
