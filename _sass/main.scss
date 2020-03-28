@@ -13,23 +13,23 @@ h1, h2, h3, h4, h5, h6 {
 
 a:link {
 	text-decoration: none;
-	font-color: #333;
+	color: #333;
 	border-bottom: 1px solid #bb4e20;
 }
 
-.navbutton a:link {
-	text-decoration: none;
-	font-color: inherit;
-}
+	.navbutton a:link {
+		text-decoration: none;
+		color: inherit;
+	}
 
 a:visited {
 	text-decoration: none;
-	font-color: #bb4e20;
+	color: #bb4e20;
 }
 
-.navbutton a:visited {
-	font-color: inherit;
-}
+	.navbutton a:visited {
+		color: inherit;
+	}
 
 a:active {
 	opacity: 0.2;
@@ -46,6 +46,7 @@ a:active {
 	font-size: 16px;
 	font-weight: bold;
 	font-color: #EFEFF4!important;
+	color: #EFEFF4!important;
 	border-radius: 4px;
 	background-color: #333;
 }
