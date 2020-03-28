@@ -1,10 +1,10 @@
 body {
-        margin: 0;
-        padding: 40px;
-        font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
-        max-width: 28rem;
-        margin: auto;
-        background-color: #EFEFF4;
+    margin: 0;
+    padding: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+    max-width: 28rem;
+    margin: auto;
+    background-color: #EFEFF4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +61,8 @@ a:active {
 
 footer {
 	position: absolute !important;
+	max-width: 28rem;
+    margin: auto;
 	bottom: 0 !important;
 	left: 0 !important;
 }
