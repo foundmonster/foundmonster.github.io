@@ -9,4 +9,4 @@ I take a multifaceted approach in my work, applying my skills in research, analy
 
 I've worked on various assignments ranging from experience audits of technical enterprise e-commerce platforms, a complete redesign of a customer account & order management system, and research, strategy, and design of brand presences and experiences within global product marketplaces.
 
-I currently work at Apple as a UX designer. 
+I currently work at <a href="https://apple.com">Apple</a> as a UX designer. 
