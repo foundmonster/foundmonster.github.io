@@ -13,7 +13,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a:link {
 	text-decoration: none;
+	font-color: #333;
 	border-bottom: 1px solid #bb4e20;
+}
+
+.navbutton a:link {
+	text-decoration: none;
+	font-color: inherit;
 }
 
 a:visited {
