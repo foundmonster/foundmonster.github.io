@@ -60,5 +60,6 @@ a:active {
 }
 
 footer {
-	position: absolute !important;
+	bottom: 0px;
+	z-index: 2;
 }
