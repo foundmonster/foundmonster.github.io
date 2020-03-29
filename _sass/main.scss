@@ -60,9 +60,10 @@ a:active {
 }
 
 footer {
-	position: absolute;
+	position: absolute !important;
 	max-width: 28rem;
-    margin: auto;
-    margin-bottom: 16px;
+	margin: auto;
+    margin-bottom: 24px;
 	bottom: 0px;
+	left: 0px;
 }
