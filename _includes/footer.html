@@ -2,8 +2,8 @@
 	<br>
 	<hr><br>
 	  {% for item in site.data.footerlinks %}
-     <a href="{{ item.link | join: " • " }}" class="footerlinx">
-      {{ item.name }}
+     <a href="{{ item.link | join: " • " }}">
+      {{ item.name | join: " • " }}
     </a>
   {% endfor %} <br>
   <br>
