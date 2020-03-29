@@ -3,7 +3,7 @@
 	<hr><br>
 	  {% for item in site.data.footerlinks %}
      <a href="{{ item.link }}" class="footerlinx">
-      {{ item.name }}
+      {{ item.name | join: " • " }}
     </a>
   {% endfor %} <br>
   <br>
