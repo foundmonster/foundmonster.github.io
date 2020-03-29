@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 24px;
 }
 
+
+
 a:link {
 	text-decoration: none;
 	color: #333;
@@ -23,6 +25,20 @@ a:link {
 		border-bottom: inherit;
 	}
 
+
+
+a:hover {
+	border: 1px solid #bb4e20;
+	border-radius: 4px;
+}
+
+	.navbutton a:hover {
+		border: inherit;
+		border-radius: inherit;
+	}
+
+
+
 a:visited {
 	text-decoration: none;
 	color: black;
@@ -34,9 +50,12 @@ a:visited {
 		border-bottom: inherit;
 	}
 
+
+
 a:active {
 	opacity: 0.2;
 }
+
 
 .navspacing {
 	margin-top: 80px;
