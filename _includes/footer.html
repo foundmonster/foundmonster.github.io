@@ -1,11 +1,9 @@
 <footer>
 	<br>
 	<hr><br>
-	  {% for item in site.data.footerlinks %}
-     <a href="{{ item.link | join: " • " }}">
-      {{ item.name | join: " • " }}
-    </a>
-  {% endfor %} <br>
-  <br>
+	{% for item in site.data.footerlinks | join: ", " %}
+    <a href="{{ item.link }}"> {{ item.name | join: "• " }}</a>
+	{% endfor %} <br>
+	<br>
 	&copy; Cory Malnarick 2020
 </footer>
