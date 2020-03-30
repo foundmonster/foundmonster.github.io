@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+<!-- link styles -->
 
 a:link {
 	text-decoration: none;
@@ -25,13 +26,13 @@ a:link {
 		border-bottom: 0px;
 	}
 
-
-
 a:hover {
 	background-color: rgba(0, 0, 0, 0.2); 
 }
 
-
+a:active {
+	opacity: 0.2;
+}
 
 a:visited {
 	text-decoration: none;
@@ -44,11 +45,8 @@ a:visited {
 		border-bottom: 0px;
 	}
 
+<!-- end link styles -->
 
-
-a:active {
-	opacity: 0.2;
-}
 
 
 .pagetitlespacing {
