@@ -31,9 +31,6 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.2); 
 }
 
-	.navbutton a:hover {
-	}
-
 
 
 a:visited {
@@ -61,7 +58,7 @@ a:active {
 .navbutton {
 	text-decoration: none;
 	display: inline-block;
-	padding-right: 8px;
+	margin-right: 8px;
 	font-size: 16px;
 	font-weight: bold;
 	font-color: #333!important;
