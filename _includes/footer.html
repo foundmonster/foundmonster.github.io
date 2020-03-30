@@ -2,7 +2,7 @@
 	<br>
 	<hr><br>
 	{% for item in site.data.footerlinks | join: ", " %}
-    <a href="{{ item.link }}"> {{ item.name | join: "• " }}</a>
+    <a href="{{ item.link }}"> {{ item.name }}</a>
 	{% endfor %} <br>
 	<br>
 	&copy; Cory Malnarick 2020
