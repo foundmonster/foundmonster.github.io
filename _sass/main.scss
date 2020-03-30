@@ -11,20 +11,11 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 24px;
 }
 
-
-<!-- link styles -->
-
 a:link {
 	text-decoration: none;
 	color: #333;
 	border-bottom: 1px solid #bb4e20;
 }
-
-	.navbutton a:link {
-		text-decoration: none;
-		color: inherit;
-		border-bottom: 0px;
-	}
 
 a:hover {
 	background-color: rgba(0, 0, 0, 0.2); 
@@ -39,15 +30,6 @@ a:visited {
 	color: black;
 	border-bottom: 1px solid #bb4e20;
 }
-
-	.navbutton a:visited {
-		color: inherit;
-		border-bottom: 0px!important;
-	}
-
-<!-- end link styles -->
-
-
 
 .pagetitlespacing {
 	margin-top: 80px;
