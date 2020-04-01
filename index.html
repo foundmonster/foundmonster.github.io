@@ -3,13 +3,11 @@ layout: layout
 title: Cory Malnarick
 ---
 
-<h2>UX Designer at <a href="https://www.apple.com">Apple</a></h2><br>
-
+<h2>UX Designer at <a href="https://www.apple.com">Apple</a></h2>
 <ul><h3>Blog posts:</h3>
 {% for post in site.posts %}
 <li>
 <a href="{{ post.url }}">{{ post.title }}</a><span class="postdate">{{ post.date | date: "%B %e, %Y"}}</span>
 </li>
 {% endfor %}
-
 </ul>
