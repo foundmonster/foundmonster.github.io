@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
     margin: auto;
-    padding: 40px;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
     max-width: 28rem;
     background-color: #EFEFF4;
@@ -11,6 +10,10 @@ body {
 
 main {
 	flex: 1 0 auto;
+}
+
+.navspacing {
+	padding-top: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,7 +42,7 @@ a:visited {
 
 .postdate {
 	color: #EFEFF4;
-	background-color: grey 0.6;
+	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	padding-left: 2px;
 	padding-right: 2px;
