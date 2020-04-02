@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     margin: auto;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
-    max-width: 28rem;
+    max-width: 32rem;
     background-color: #EFEFF4;
 }
 
@@ -31,6 +31,10 @@ main {
     width: 80%;
     font-size: 30px;
     margin-block-end: 0px;
+}
+
+.p-home {
+	width: 80%;
 }
 
 .navspacing {
