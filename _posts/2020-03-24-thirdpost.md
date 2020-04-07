@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FORMATT TTTTTT TTTTT TTTTTT TTTTTT TTTT TING! 
+categories: post
 ---
 # h1 title of post 
 Lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem 
