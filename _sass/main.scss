@@ -35,6 +35,10 @@ main {
     margin-bottom: 2.2222rem;
 }
 
+.headline {
+    padding-top: 80px;
+}
+
 .subheadline {
 	width: 40rem;
 }
@@ -63,7 +67,7 @@ h2 {
 }
 
 p {
-    width:28rem;
+    width:32rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
     line-height: 1.6111;
@@ -112,5 +116,5 @@ a:visited {
 
 footer {
 	padding-bottom: 16px;
-    max-width: 40rem;
+    max-width: 32rem;
 }
