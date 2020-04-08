@@ -109,13 +109,13 @@ ul {
 }
 
 li {
-	padding-bottom: 4px;
-}
-
-licard {
-    padding: 8px;
+    padding: 16px;
+    padding-top: 8px;
     border-radius: 8px;
-    margin-top:4px;
+    margin-top: 8px;
+    background-color: rgb(228, 228, 228);
+    width: 32rem;
+    margin-left: -16px;
 }
 
 a:link {
