@@ -1,3 +1,25 @@
+/*  Availabile fonts:
+    
+    kepler-std-caption:
+        normal: 400, 700
+        italic: 400, 700
+
+    kepler-std-semicondensed-sub:
+        normal: 400, 700
+        italic: 400, 700
+
+    litania:
+        normal: 400
+
+    aktiv-grotesk
+        normal: 400, 700
+        italic: 400, 700
+
+    ativ-grotesk-thin
+        normal: 200
+        italic: 200
+*/
+
 body {
     display: flex;
     min-height: 100vh;
@@ -36,6 +58,9 @@ main {
 
 .headline {
     padding-top: 80px;
+    font-family: kepler-std-semicondensed-sub;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .subheadline {
