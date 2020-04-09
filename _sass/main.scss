@@ -102,13 +102,9 @@ p {
 
 ul {
 	list-style: none;
-    padding: 0;
     padding-inline-start: 0px;
     margin-block-start: 0px;
     margin-block-end: 0px;
-}
-
-li {
     padding: 16px;
     padding-top: 8px;
     border-radius: 8px;
@@ -116,6 +112,10 @@ li {
     background-color: rgb(228, 228, 228);
     width: 32rem;
     margin-left: -16px;
+}
+
+li {
+    padding-top: 8px;
 }
 
 a:link {
