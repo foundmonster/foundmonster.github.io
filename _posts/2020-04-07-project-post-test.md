@@ -2,6 +2,7 @@
 layout: post
 title: Project 01
 categories: project
+description: Project 01 was the output of a set of tasks, implemented by principles, learned by experience and study.
 ---
 ## Yeah man! this is a project! 
 
