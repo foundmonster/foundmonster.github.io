@@ -1,6 +1,6 @@
 ---
 layout: post
-title: project post test
+title: Project 01
 categories: project
 ---
 ## Yeah man! this is a project! 

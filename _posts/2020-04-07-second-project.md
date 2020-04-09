@@ -1,7 +1,7 @@
 ---
 layout: post
-title: second project test post
+title: Project 02
 categories: project
 ---
-## this is a test to show danielle how this works!!!
+## This is a test to show danielle how this works!!!
 Isn't this so cool?
