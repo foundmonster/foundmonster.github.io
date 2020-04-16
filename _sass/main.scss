@@ -37,6 +37,20 @@ main {
 	flex: 1 0 auto;
 }
 
+.bloggrid {
+    display: grid;
+    grid-template-columns: repear(auto-fill, minmax(192px, 1fr));
+    grid-gap: 1rem;
+}
+
+.bloggrid div {
+    border-style: solid;
+    border: 0.5px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
 .navspacing {
     padding-top: 40px;
 }
