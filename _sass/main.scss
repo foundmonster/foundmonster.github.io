@@ -37,6 +37,10 @@ main {
 	flex: 1 0 auto;
 }
 
+.navspacing {
+    padding-top: 40px;
+}
+
 .headercard {
     background-color: #D6D6DD!important; 
     max-width: 100%; 
@@ -95,10 +99,6 @@ p {
     margin-block-start: 0px;
     margin-block-end: 0px;
     line-height: 1.6111;
-}
-
-.navspacing {
-	padding-top: 40px;
 }
 
 ul {
