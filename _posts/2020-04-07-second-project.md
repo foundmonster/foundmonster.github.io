@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Indigo
+title: Indigo
 categories: project
 description: Project Indigo was a targeted and successful solution to a complex and broad problem. 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Grey
+title: Grey
 categories: project
 description: Project Grey was the output of a set of tasks, implemented by principles, learned by experience and study.
 ---

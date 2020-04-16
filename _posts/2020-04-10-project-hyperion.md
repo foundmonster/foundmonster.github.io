@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Hyperion
+title: Hyperion
 categories: project
 description: This project was completed under special timeline and resource constraints, and our solution was underbudget and brought 500% revenue. 
 ---
