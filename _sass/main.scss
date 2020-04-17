@@ -51,6 +51,16 @@ main {
     border-radius: 4px;
     border-color: rgba(0, 0, 0, 0.2);
     padding: 0.8rem;
+    box-shadow: 0px 4px 5px grey; 
+    transition-property: box-shadow, transform;
+    transition-duration: .2s, .2s;
+    transition-timing-function: linear, ease-in;
+}
+
+.bloggrid div:hover {
+    box-shadow: 0px 10px 16px grey;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 .navspacing {
