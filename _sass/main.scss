@@ -48,6 +48,7 @@ main {
 .bloggrid div {
     border-radius: 4px;
     padding: 0.8rem;
+    min-height: 80px;
     box-shadow: 0px 4px 8px rgb(200, 200, 200); 
     transition-property: box-shadow, transform;
     transition-duration: .2s, .2s;
