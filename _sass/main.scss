@@ -37,6 +37,28 @@ main {
 	flex: 1 0 auto;
 }
 
+.projectgrid {
+    display: grid;
+    max-width: 40rem;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr))
+}
+
+.projectgrid div {
+    border-radius: 4px;
+    padding: 0.8rem;
+    min-height: 120px;
+    box-shadow: 0px 4px 8px rgb(200, 200, 200); 
+    transition-property: box-shadow, transform;
+    transition-duration: .2s, .2s;
+    transition-timing-function: linear, ease-in;
+}
+
+.projectgrid div:hover {
+    box-shadow: 0px 8px 12px rgb(200, 200, 200); 
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
 .bloggrid {
     display: grid;
     max-width: 32rem;
