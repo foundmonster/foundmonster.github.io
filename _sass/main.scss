@@ -40,7 +40,7 @@ main {
 .projectgrid {
     display: grid;
     max-width: 40rem;
-    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
     grid-gap: 1rem;
     margin-top: 16px;
 }
