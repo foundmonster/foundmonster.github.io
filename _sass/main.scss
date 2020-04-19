@@ -182,25 +182,34 @@ li {
 
 a:link.projectlistlink {
     text-decoration: none;
-    font-size: 14px;
-    border-bottom: 0px;
-    padding-top:2px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d2d2d2;
+    border-radius: 4px;
 }
 
 a:hover.projectlistlink {
     text-decoration: none;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.2); 
+    font-size: 12px;
+    color: rgba(0,0,0,0.2);
+    background-color: #D2D2D2;
 }
 
 a:visited.projectlistlink {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d2d2d2;
+    border-radius: 4px;
 }
 
 a:active.projectlistlink {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-color: rgb(115, 115, 115);
     opacity: 0.2;
 }
