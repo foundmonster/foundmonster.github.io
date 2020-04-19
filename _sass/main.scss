@@ -174,6 +174,11 @@ li {
     font-size: 14px;
 }
 
+.projectlistlink {
+    position: fixed;
+    bottom: 0;
+}
+
 a:link.projectlistlink {
     text-decoration: none;
     font-size: 14px;
