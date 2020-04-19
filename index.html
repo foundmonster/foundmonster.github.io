@@ -10,11 +10,11 @@ title: Cory Malnarick
 <h3>Case Studies</h3>
 <div class="projectgrid">
 	{% for post in site.categories.project %}
-		<div>
+		<a href="{{ post.url }}"><div>
 			<p class="projectlisttitle">{{ post.title }}</p>
 			{% if post.description %}<p class="projectlistdescription">{{ post.description }}</p>{% endif %}
 			<a class="projectlistlink" href="{{ post.url }}">Read more →</a>
-		</div>
+		</div></a>
 	{% endfor %}
 </div>
 <br>
