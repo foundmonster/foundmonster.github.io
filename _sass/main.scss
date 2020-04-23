@@ -18,7 +18,52 @@
     ativ-grotesk-thin
         normal: 200
         italic: 200
+
+
+For button CSS system: 
+
+a {
+    style
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: #0071e3;
+    color: white;
+}
+
+button-unique-kind-of-button-style {
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 28px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 28px;
+}
+
 */
+
+
+/* PAGE WIDTH, FONT, HEADERS */
 
 body {
     display: flex;
@@ -36,6 +81,39 @@ body {
 main {
 	flex: 1 0 auto;
 }
+
+h1, h3, h4, h5, h6 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 40rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+}
+
+h2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 40rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-weight: 400;
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;  
+}
+
+p {
+    max-width:28rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    line-height: 1.6111;
+}
+
+
+/* PROJECT AND BLOG GRIDS */
 
 .projectgrid {
     display: grid;
@@ -88,6 +166,19 @@ main {
     transform: translateY(-3px);
 }
 
+.projectlisttitle {
+    padding-bottom:2px;
+}
+
+.projectlistdescription {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+}
+
+
+/* EXTRA STYLING */
+
 .navspacing {
     padding-top: 40px;
 }
@@ -122,57 +213,29 @@ main {
 	max-width: 40rem;
 }
 
-h1, h3, h4, h5, h6 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    max-width: 40rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: aktiv-grotesk, sans-serif;
-	font-style: normal;
+
+
+
+/* LINKS */
+
+a:link {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #bb4e20;
 }
 
-h2 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    max-width: 40rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-weight: 400;
-    font-family: aktiv-grotesk, sans-serif;
-    font-style: normal;  
+a:hover {
+    color: rgba(0, 0, 0, 0.2); 
 }
 
-p {
-    max-width:28rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    line-height: 1.6111;
+a:active {
+    opacity: 0.2;
 }
 
-ul {
-	list-style: none;
-    padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-bottom: 16px;
-    max-width: 32rem;
-}
-
-li {
-    padding-top: 16px;
-}
-
-.projectlisttitle {
-    padding-bottom:2px;
-}
-
-.projectlistdescription {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 14px;
+a:visited {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #bb4e20;
 }
 
 .projectlistlink {
@@ -214,30 +277,29 @@ a:active.projectlistlink {
     opacity: 0.2;
 }
 
-a:link {
-	text-decoration: none;
-	color: #333;
-	border-bottom: 1px solid #bb4e20;
-}
-
-a:hover {
-	color: rgba(0, 0, 0, 0.2); 
-}
-
-a:active {
-	opacity: 0.2;
-}
-
-a:visited {
-	text-decoration: none;
-	color: black;
-	border-bottom: 1px solid #bb4e20;
-}
-
 .postdate {
-	color: #333;
-	font-size: 12px;
+    color: #333;
+    font-size: 12px;
 }
+
+ul {
+	list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 16px;
+    max-width: 32rem;
+}
+
+li {
+    padding-top: 16px;
+}
+
+
+
+
+
+
 
 footer {
 	padding-bottom: 16px;
