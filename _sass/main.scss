@@ -240,6 +240,7 @@ li {
 
 
 
+
 /* LINKS */
 
 a:link {
@@ -301,6 +302,23 @@ a:active.projectlistlink {
     opacity: 0.2;
 }
 
+
+
+
+
+/* FOOTER */
+
+footer {
+	padding-bottom: 16px;
+    max-width: 28rem;
+}
+
+
+
+
+
+/* FOR STYLE GUIDE */
+
 .projectlistlinkforstylegide {
     position: relative;
 }
@@ -337,14 +355,4 @@ a:active.projectlistlinkforstylegide {
     font-size: 12px;
     font-color: rgb(115, 115, 115);
     opacity: 0.2;
-}
-
-
-
-
-/* FOOTER */
-
-footer {
-	padding-bottom: 16px;
-    max-width: 28rem;
 }
