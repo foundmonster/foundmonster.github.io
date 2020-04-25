@@ -213,6 +213,24 @@ p {
 	max-width: 40rem;
 }
 
+.postdate {
+    color: #333;
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 16px;
+    max-width: 32rem;
+}
+
+li {
+    padding-top: 16px;
+}
+
 
 
 
@@ -275,24 +293,6 @@ a:active.projectlistlink {
     font-size: 12px;
     font-color: rgb(115, 115, 115);
     opacity: 0.2;
-}
-
-.postdate {
-    color: #333;
-    font-size: 12px;
-}
-
-ul {
-	list-style: none;
-    padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-bottom: 16px;
-    max-width: 32rem;
-}
-
-li {
-    padding-top: 16px;
 }
 
 
