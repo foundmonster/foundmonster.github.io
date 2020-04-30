@@ -273,7 +273,10 @@ a:link.button-primary {
     color: white;
     background-color: #333;
     padding: 8px 16px;
-    border-radius: 4px;    
+    border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
 }
 
 a:visited.button-primary {
@@ -282,11 +285,18 @@ a:visited.button-primary {
     background-color: #333;
     padding: 8px 16px;
     border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
 }
 
 a:hover.button-primary {
     text-decoration: none;
-    background-color: #DFDFE3;
+    background-color: #454545;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #454545;
+    border-radius: 4px;
 }
 
 a:active.button-primary {
