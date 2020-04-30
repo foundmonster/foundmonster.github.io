@@ -182,8 +182,8 @@ p {
 
 .buttongrid {
     display: grid;
-    max-width: 16rem;
-    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    max-width: 50%;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
     grid-gap: 1rem;
 }
 
