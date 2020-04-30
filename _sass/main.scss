@@ -117,7 +117,7 @@ p {
 
 
 
-/* PROJECT AND BLOG GRIDS */
+/* GRIDS */
 
 .projectgrid {
     display: grid;
@@ -180,7 +180,12 @@ p {
     font-size: 14px;
 }
 
-
+.buttongrid {
+    display: grid;
+    max-width: 16rem;
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    grid-gap: 1rem;
+}
 
 
 /* EXTRA STYLING */
@@ -241,7 +246,7 @@ li {
 
 
 
-/* LINKS */
+/* LINKS AND BUTTONS */
 
 a:link {
     text-decoration: none;
@@ -261,6 +266,32 @@ a:visited {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid #bb4e20;
+}
+
+a:link.button-primary {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 8px 16px;
+    border-radius: 4px;    
+}
+
+a:visited.button-primary {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 8px 16px;
+    border-radius: 4px; 
+}
+
+a:hover.button-primary {
+    text-decoration: none;
+    background-color: #DFDFE3;
+}
+
+a:active.button-primary {
+    text-decoration: none;
+    opacity: 0.2;
 }
 
 .projectlistlink {
