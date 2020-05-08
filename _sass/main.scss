@@ -182,9 +182,7 @@ p {
 
 .buttongrid {
     display: grid;
-    max-width: 50%;
     grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-    grid-gap: 1rem;
 }
 
 
@@ -268,6 +266,9 @@ a:visited {
     border-bottom: 1px solid #bb4e20;
 }
 
+
+/* BUTTON PRIMARY */
+
 a:link.button-primary {
     text-decoration: none;
     display: inline-block;
@@ -303,6 +304,45 @@ a:hover.button-primary {
 }
 
 a:active.button-primary {
+    text-decoration: none;
+    opacity: 0.2;
+}
+
+
+/* BUTTON SECONDARY */
+
+a:link.button-secondary {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+}
+
+a:visited.button-secondary {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+}
+
+a:hover.button-secondary {
+    text-decoration: none;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #454545;
+    border-radius: 4px;
+}
+
+a:active.button-secondary {
     text-decoration: none;
     opacity: 0.2;
 }
