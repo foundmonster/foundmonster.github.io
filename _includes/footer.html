@@ -1,4 +1,6 @@
 <footer>
+	<br>
+	<br>
 		{% for item in site.data.footerlinks %}
   		<a href="{{ item.link }}">{{ item.name }}</a>{% unless forloop.last %} <span>•</span>{% endunless %}
 		{% endfor %} <br>
