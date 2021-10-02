@@ -22,8 +22,6 @@ Lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor
 
 Lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem 
 
-***
-
 Lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem ipsum dolor et lorem 
 
 ###### h6 h6 h6 h6 h6 h6 

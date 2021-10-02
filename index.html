@@ -1,25 +1,25 @@
 ---
 layout: layout
-title: Cory Malnarick
+title: Cory Malnarick – Designer
 ---
 <h2 class="headline">{{ page.title }}</h2><br>
 <p>I'm a multifunctional designer that works across various creative disciplines in digital & service products with a deep expertise in systems thinking & experience design.</p><br>
+<p>I take a multifaceted approach in my work, applying my skills in research, analysis, strategy, and design to craft real-world solutions for complicated problems that exceed the demands of the market, business, and customer.</p><br>
+<p>I've worked on various assignments ranging from experience audits of technical enterprise e-commerce platforms, a complete redesign of a customer account & order management system, and research, strategy, and design of brand presences and experiences within global product marketplaces.</p><br>
+<p>I currently work at <a href="https://apple.com">Apple</a> as a UX designer.</p>
+<br>
 <div class="buttongrid">
 	<div><a class="button-primary" href="/CV.html">CV</a></div>
 	<div><a class="button-secondary" href="mailto:cory.malnarick@gmail.com">Email</a></div>
-</div>
-{% comment %}
-<p>I take a multifaceted approach in my work, applying my skills in research, analysis, strategy, and design to craft real-world solutions for complicated problems that exceed the demands of the market, business, and customer.</p><br>
-<p>I've worked on various assignments ranging from experience audits of technical enterprise e-commerce platforms, a complete redesign of a customer account & order management system, and research, strategy, and design of brand presences and experiences within global product marketplaces.</p><br>
-<p>I currently work at <a href="https://apple.com">Apple</a> as a UX designer.</p>{% endcomment %}<br><br>
-{% comment %}
+</div><br><br>
+
 <h3>Case Studies</h3>
 <div class="projectgrid">
 	{% for post in site.categories.project %}
 		<div>
 			<p class="projectlisttitle">{{ post.title }}</p>
 			{% if post.description %}<p class="projectlistdescription">{{ post.description }}</p>{% endif %}
-			<a class="projectlistlink" href="{{ post.url }}">Read more →</a>
+			<a class="projectlistlink" href="{{ post.url }}">Open →</a>
 		</div>
 	{% endfor %}
 </div>
@@ -33,4 +33,4 @@ title: Cory Malnarick
 		</div>
 	{% endfor %}
 </div>
-{% endcomment %}
+
