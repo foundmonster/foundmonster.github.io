@@ -227,17 +227,21 @@ p {
     font-size: 12px;
 }
 
+
+/* UNORDERED LIST */
+
 ul {
-    list-style: none;
+    list-style: circle;
     padding-inline-start: 0px;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    margin-bottom: 16px;
-    max-width: 32rem;
+    margin-bottom: 24px;
+    max-width: 24rem;
+    font-size: 14px;
 }
 
 li {
-    padding-top: 16px;
+    padding-top: 8px;
 }
 
 
