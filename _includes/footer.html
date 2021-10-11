@@ -1,11 +1,11 @@
 <footer>
 	<br>
 	<br>
-		<i>Portfolio available upon request.</i><br>
-		<br>
-		{% for item in site.data.footerlinks %}
-  		<a href="{{ item.link }}">{{ item.name }}</a>{% unless forloop.last %} <span>•</span>{% endunless %}
-		{% endfor %} <br>
+	{% for item in site.data.footerlinks %}
+  	<a href="{{ item.link }}">{{ item.name }}</a>{% unless forloop.last %} <span>•</span>{% endunless %}
+	{% endfor %} 
+	<br>
+	Portfolio available upon request.
 	<br>
 	&copy; Cory Malnarick 2021
 </footer>
