@@ -1,7 +1,7 @@
 ---
 layout: post
-title: #4 yo! 
-snippet: This is where we include a brief description of whatever this post is about
+title: new fourth post title  
+description: This is where we include a brief description of whatever this post is about
 categories: post
 ---
 # All I'm doing here is trying out posting for fun

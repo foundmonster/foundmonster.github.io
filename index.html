@@ -38,7 +38,9 @@ I currently work at <a href="https://apple.com">Apple</a> as a UX designer. <br>
 	{% for post in site.categories.post %}
 		<div>
 			<span class="postdate">{{ post.date | date: "%B %e, %Y"}}</span><br>
-			<a href="{{ post.url }}">{{ post.title }}</a><br>
+			<a class="postlink" href="{{ post.url }}">{{ post.title }}</a>
+			<br>
+			{% if post.description %}<p class="postlistdescription">{{ post.description }}</p>{% endif %}
 		</div>
 	{% endfor %}
 </div>

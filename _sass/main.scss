@@ -22,9 +22,7 @@
 
 For button CSS system: 
 
-a {
-    style
-}
+
 
 button {
     cursor: pointer;
@@ -114,6 +112,10 @@ p {
     line-height: 1.6111;
 }
 
+a.postlink {
+    font-size: 13px;
+}
+
 
 
 
@@ -180,10 +182,17 @@ p {
     font-size: 14px;
 }
 
+.postlistdescription {
+    padding-top: 4px;
+    font-size: 13px;
+}
+
 .buttongrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
 }
+
+
 
 
 /* EXTRA STYLING */
@@ -195,11 +204,12 @@ p {
 .headercard {
     background-color: #D6D6DD!important; 
     max-width: 100%; 
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 40px;
     padding-top: 160px;
-    margin-left: -40px;
+    margin-left: -20px;
     margin-top: 80px;
+    margin-right: -20px;
     margin-bottom: 60px;
 }
 
@@ -226,6 +236,8 @@ p {
     color: #333;
     font-size: 12px;
 }
+
+
 
 
 /* UNORDERED LIST */
@@ -273,6 +285,7 @@ ul.numbered-list {
     }
   }
 }
+
 
 
 
@@ -341,6 +354,8 @@ a:active.button-primary {
 }
 
 
+
+
 /* BUTTON SECONDARY */
 
 a:link.button-secondary {
@@ -383,6 +398,23 @@ a:active.button-secondary {
 .projectlistlink {
     position: absolute;
     bottom: 0.8rem;
+}
+
+a:link.navigationlink {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d2d2d2;
+    border-radius: 4px;
+}
+
+a:hover.navigationlink {
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+    background-color: #DFDFE3;
 }
 
 a:link.projectlistlink {

@@ -1,11 +1,13 @@
 <footer>
 	<p>
 	<br>
+	<br>
 	{% for item in site.data.footerlinks %}
   	<a href="{{ item.link }}">{{ item.name }}</a>{% unless forloop.last %} <span>•</span>{% endunless %}
-	{% endfor %} <br>
-	Portfolio available upon request.<br>
-	&copy; Cory Malnarick 2021
+	{% endfor %} <br><br>
+	<span class="postdate">Portfolio available upon request.</span><br>
+	<span class="postdate">&copy; Cory Malnarick 2021
+	</span>
 	</p>
 </footer>
 

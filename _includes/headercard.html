@@ -1,4 +1,8 @@
 <div class="headercard">
 	<h2 class="headline">{{ page.title }}</h2>
-	<h3 class="subheadline">{{ page.snippet }}</h3>
+	{% if page.description %}
+	<h3 class="subheadline">{{ page.description }}</h3>
+	{% else %}
+	–––
+	{% endif %}
 </div>
