@@ -1,6 +1,7 @@
 ---
 layout: post
-title: FORMATT TTTTTT TTTTT TTTTTT TTTTTT TTTT TING! 
+title: Formatting
+description:
 categories: post
 ---
 # h1 title of post 
