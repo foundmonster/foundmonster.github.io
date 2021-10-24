@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formatting
-description:
+description: Lorem ipsum dolor test lorem ipsum dolor test lorem ipsum dolor test lorem ipsum dolor test lorem ipsum dolor test 
 categories: post
 ---
 # h1 title of post 

@@ -20,8 +20,8 @@
         italic: 200
 
 
-For button CSS system: 
 
+For button CSS system: 
 
 
 button {
@@ -196,9 +196,9 @@ a.postlink {
     border-radius: 8px;
     padding: 40px;
     padding-top: 160px;
-    margin-left: -20px;
+    margin-left: -40px;
     margin-top: 80px;
-    margin-right: -20px;
+    margin-right: -40px;
     margin-bottom: 60px;
 }
 
@@ -212,13 +212,21 @@ a.postlink {
     margin-bottom: 2.2222rem;
 }
 
+.homepagename {
+    padding-top: 120px;
+}
+
 .headline {
-    padding-top: 80px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 1.2;
     font-style: normal;
 }
 
 .subheadline {
-	max-width: 40rem;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    line-height: 1.2;
 }
 
 .postdate {

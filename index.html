@@ -2,7 +2,7 @@
 layout: layout
 title: Cory Malnarick – UX Designer
 ---
-<h2 class="headline">Cory Malnarick</h2><br>
+<h2 class="homepagename">Cory Malnarick</h2><br>
 <p>I am a multifunctional designer that works across various creative disciplines within digital & service experiences that specializes in systems & experience design.</p><br>
 <p>My skills in research, analysis, strategy, and design enable a robust approach to crafting exceptional solutions for complicated, real-world problems that exceed the demands of the market, business, and customer. </p><br>
 {% comment %}
@@ -17,12 +17,14 @@ title: Cory Malnarick – UX Designer
 I currently work at <a href="https://apple.com">Apple</a> as a UX designer. <br>
 <br>
 <br>
-{% comment %}
+
 <div class="buttongrid">
+	{% comment %}
 	<div><a class="button-primary" href="/cory-malnarick-resume.pdf">CV</a></div> 
+	{% endcomment %}
 	<div><a class="button-secondary" href="mailto:cory.malnarick@gmail.com">Contact</a></div>
 </div><br><br>
-
+{% comment %}
 <h3>Case Studies</h3>
 <div class="projectgrid">
 	{% for post in site.categories.project %}
