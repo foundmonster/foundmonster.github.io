@@ -3,6 +3,6 @@
 	{% if page.description %}
 	<h3 class="subheadline">{{ page.description }}</h3>
 	{% else %}
-	–––
 	{% endif %}
+	<div class="postdate">{{ page.date | date: "%B %e, %Y"}}</div>
 </div>
