@@ -61,6 +61,11 @@ button-unique-kind-of-button-style {
 */
 
 
+/* ANIMATIONS */
+
+@keyframes content-fade-in {
+  from { opacity: 0 }
+}
 
 
 /* PAGE WIDTH, FONT, HEADERS */
@@ -76,6 +81,8 @@ body {
     background-color: #EFEFF4;
     padding-left: 24px;
     padding-right: 24px;
+    animation: 1s content-fade-in;
+
 }
 
 main {
@@ -611,5 +618,4 @@ a:active.buttonforstyleguidetest {
 
 .globe {
     position: relative;
-
 }
