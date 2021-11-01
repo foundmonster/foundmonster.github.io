@@ -545,3 +545,71 @@ a:active.buttonforstyleguidetest {
     font-color: rgb(115, 115, 115);
     opacity: 0.2;
 }
+
+/* GLOBE */
+
+
+.main-container {
+    display: center;
+    Justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 63px;
+    width: 66px;
+
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+    18% {
+    opacity: 1;
+  }
+    19% {
+    opacity: 0;
+  }
+    20% {
+    opacity: 1;
+  }
+    96% {
+        opacity: 1;
+    }
+    97% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 1;
+    }
+}
+
+.countries-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    height: 96%;
+    width: 96%;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.countries {
+    position: absolute;
+    animation: axis-spin 5s steps(24) infinite;
+}
+
+@keyframes axis-spin {
+  from {
+    transform: translatex(0px);
+  }
+  to {
+    transform: translatex(-123px);
+  }
+}
+
+.globe {
+    position: relative;
+
+}
