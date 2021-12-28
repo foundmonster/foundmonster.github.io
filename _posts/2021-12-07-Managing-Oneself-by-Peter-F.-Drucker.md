@@ -21,7 +21,7 @@ Below I've provided that outline in full so others may also more easily read, un
 
 <br>
 - **What are my strengths?**
-	- Feedback analysis 
+	- Feedback Analysis
 		- For all key decisions or key actions, write down what you expect will happen. 
 		- 9-12 months later, compare the actual results with your expectations. 
 	- Action that follows feedback analysis:
