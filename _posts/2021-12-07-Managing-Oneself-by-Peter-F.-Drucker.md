@@ -9,32 +9,31 @@ image: /assets/images/managing-oneself.jpg
 
 This book was [originally a long article](https://hbr.org/2005/01/managing-oneself) in the Harvard Business Review. 
 
-I only recently discovered its book version from a list of recommendations of materials on career maintenance. I resonated with its message a lot. I thought that it does a great job structuring and communicating what to self-evaluate and how to do it in a clear and effective way that I haven't seen otherwise. 
+I recently discovered its book version from a list of recommendations of materials on career maintenance. I resonated with its message a lot. I thought that it does a great job structuring and communicating what to self-evaluate and how to do it in a clear and effective way that I haven't seen otherwise. 
 
-I take notes in an outline format when I find short action-oriented books like this so I can more easily refer back to its message and take action over time. 
+I take notes in an outline format when I find short action-oriented books like this so I can refer back to its message and take action over time. 
 
-Below I've provided that outline in full so others may also more easily read, understand, and use its message. 
+Below I've provided that outline in full so others may read, understand, and use its message. 
 <br>
 <br>
 
 ---
 
-<br>
 - **What are my strengths?**
 	- Feedback Analysis
 		- For all key decisions or key actions, write down what you expect will happen. 
-		- 9-12 months later, compare the actual results with your expectations. 
+		- 9-12 months later, compare the results with your expectations. 
 	- Action that follows feedback analysis:
 		- **Concentrate on your strengths**
 		<br>Put yourself where your strengths produce results.
 		- **Work on improving your strengths**<br> 
-		Analysis will quickly show where you need to improve, acquire new skills, and show the gaps in knowledge that can usually be filled. 
+		Analysis will quickly show where you need to improve, acquire new skills, and show the gaps in knowledge that can be filled. 
 		- **Discover where your intellectual arrogance is causing disabling ignorance and overcome it**<br>
 		Acquire skills you need to filly realize your strengths.
 		- **Remedy bad habits**
 		<br>Remedy the things you do or fail to do that inhibit your effectiveness and performance. These will quickly show up in feedback analysis. 
 		- **Remedy bad manners**<br>
-		Simple things like saying “please” and “thank you” and knowing a person’s name or asking after their family enable two people to work together whether they like each other or not. When bright people fail as soon as coordination with others is required, it probably indicates lack of courtesy – that is, lack of manners. 
+		Saying “please” and “thank you” and knowing a person’s name or asking after their family enable two people to work together whether they like each other or not. When bright people fail as soon as coordination with others is required, it indicates lack of courtesy – that is, lack of manners. 
 	- Feedback analysis reveals **what not to do** by showing areas in which we have no talent or skill and little chance of becoming even mediocre. In those areas, a knowledge worker should not take on work, jobs, and assignments. Waste as little effort as possible on improving areas of low competence. 
 <br>
 - **How do I Perform?**
