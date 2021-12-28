@@ -1,8 +1,24 @@
-<div class="headercard">
-	<div class="postdate">{{ page.date | date: "%B %e, %Y"}}</div>
+{% if page.image %}
+<div class="headercard-2">
+	{% if page.image %}
+	<div class="img-box" style="background-image: url({{ page.image }})"></div>
+	{% endif %}
+	<span class="postdate">{{ page.date | date: "%Y %B %e"}}</span>{% if page.tags %}<span class="posttags">&nbsp;&nbsp;•&nbsp;&nbsp;{{ page.tags }}{% endif %}
+	</span> 
 	<h2 class="headline">{{ page.title }}</h2>
 	{% if page.description %}
 	<h3 class="subheadline">{{ page.description }}</h3>
 	{% else %}
 	{% endif %}
 </div>
+{% else %}
+<div class="headercard">
+	<span class="postdate">{{ page.date | date: "%Y %B %e"}}</span>{% if page.tags %}<span class="posttags">&nbsp;&nbsp;•&nbsp;&nbsp;{{ page.tags }}{% endif %}
+	</span> 
+	<h2 class="headline">{{ page.title }}</h2>
+	{% if page.description %}
+	<h3 class="subheadline">{{ page.description }}</h3>
+	{% else %}
+	{% endif %}
+</div>
+{% endif %}

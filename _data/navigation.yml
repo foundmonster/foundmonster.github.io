@@ -1,2 +1,4 @@
-- name: ← Back
+- name: Home
   link: /
+- name: Posts
+  link: /blog-posts.html

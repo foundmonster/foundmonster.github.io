@@ -2,10 +2,17 @@
 layout: layout
 title: Cory Malnarick – UX Designer
 ---
+{% include navigation.html %}
+{% comment %}
 {% include globe.html %}
-<h2 class="homepagename">Cory Malnarick</h2><br>
-<p>I am a multifunctional designer that works across various creative disciplines within digital & service experiences that specializes in systems & experience design.</p><br>
-<p>My skills in research, analysis, strategy, and design enable a robust approach to crafting exceptional solutions for complicated, real-world problems that exceed the demands of the market, business, and customer. </p><br>
+{% endcomment %}
+<div class="homepagename">
+<h2>Cory Malnarick<br>
+<span style="color: grey">Systems & Experience Designer</span></h2><br></div>
+<p class="home">I am a designer of digital & service products specializing in systems & experience design.<br>
+<br>
+My skills in research, analysis, strategy, and design enable a robust approach to crafting exceptional yet simple solutions for complicated, real-world problems that exceed the demands of the market, business, and customer. </p>
+
 {% comment %}
 <p>I've worked on various assignments ranging from:</p>
 <ul>
@@ -15,15 +22,24 @@ title: Cory Malnarick – UX Designer
 </li>
 </ul>
 {% endcomment %}
-I currently work at <a href="https://apple.com">Apple</a> as a UX designer. <br>
+<br>
+<p class="home">I currently work at <span><a class="button-link" href="https://apple.com"> Apple</a></span> as a UX designer.</p> 
 <br>
 <br>
-
 
 <div class="buttongrid">
 	<div><a class="button-primary" href="/cory-malnarick-resume.pdf">CV</a></div> 
 	<div><a class="button-secondary" href="mailto:cory.malnarick@gmail.com">Contact</a></div>
-</div><br><br>
+</div>
+
+<h3 class="blogtitlespacing">Posts</h3>
+<div class="projectgrid">
+	{% for post in site.categories.post limit:4 %}
+	{% include postcard.html %}
+	{% endfor %}
+</div>
+<a class="navigationlink blogpostlinkspacing" href="/blog-posts.html">View All Posts →</a>
+
 {% comment %}
 <h3>Case Studies</h3>
 <div class="projectgrid">
@@ -35,17 +51,6 @@ I currently work at <a href="https://apple.com">Apple</a> as a UX designer. <br>
 		</div>
 	{% endfor %}
 </div>
-<br>
-
-<h3>Blog posts</h3>
-<div class="bloggrid">
-	{% for post in site.categories.post %}
-		<div>
-			<span class="postdate">{{ post.date | date: "%B %e, %Y"}}</span><br>
-			<a class="postlink" href="{{ post.url }}">{{ post.title }}</a>
-			<br>
-			{% if post.description %}<p class="postlistdescription">{{ post.description }}</p>{% endif %}
-		</div>
-	{% endfor %}
-</div>
 {% endcomment %}
+
+
