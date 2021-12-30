@@ -300,10 +300,6 @@ img {
     padding-top: 120px;
 }
 
-.footerspacing {
-    padding-top: 120px;
-}
-
 .subheadercard {
 	background-color: #D6D6DD!important; 
     max-width: 100%; 
@@ -607,13 +603,14 @@ a:active.projectlistlink {
 
 /* FOOTER */
 
-footer {
-	padding-bottom: 16px;
+.footerstyle {
+    background: white;
+    border-radius: 1rem;
     max-width: 28rem;
+    margin-top: 120px;
+    padding: 1rem;
+    margin-bottom: 40px;
 }
-
-
-
 
 
 /* FOR STYLE GUIDE */
