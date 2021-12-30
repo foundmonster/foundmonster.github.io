@@ -288,8 +288,11 @@ img {
 /* EXTRA STYLING */
 
 .navspacing {
-    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: -8px;
+    margin-top: 40px;
 }
 
 .blogpostlinkspacing {
@@ -604,11 +607,8 @@ a:active.projectlistlink {
 /* FOOTER */
 
 .footerstyle {
-    background: #e4e4e4;
-    border-radius: 1rem;
     max-width: 28rem;
     margin-top: 120px;
-    padding: 1rem;
     margin-bottom: 40px;
 }
 
