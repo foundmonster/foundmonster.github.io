@@ -1,23 +1,30 @@
-	<div>
-
+<div>
 		
-		<span class="postdate">{{ post.date | date: "%Y %B %e"}}
-		</span>{% if post.tags %}<span class="posttags">&nbsp;•&nbsp;&nbsp;{{ post.tags }}</span>{% endif %}
+	<span class="postdate">{{ post.date | date: "%Y %B %e"}}
+	</span>
+	{% if post.tags %}
+	<span class="posttags">
+	&nbsp;•&nbsp;&nbsp;{{ post.tags }}
+	</span>
+	{% endif %}
 
-		<br>
-		<p class="postlisttitle">
-			{{ post.title }}
-		</p>
+	<br>
+	<p class="postlisttitle">
+		{{ post.title }}
+	</p>
 
-		{% if post.description %}
-		<p class="postlistdescription">
-			{{ post.description }}
-		</p>
-		{% endif %}
+	{% if post.description %}
+	<p class="postlistdescription">
+		{{ post.description }}
+	</p>
+	{% endif %}
 
-  		<a class="projectlistlink" href="{{ post.url }}">
-  			Open →
-  		</a>
+	{% if post.external_url %}
+	<a class="projectlistlink" href="{{ post.external_url }}">Visit ↗</a>
+	{% else %}
+  	<a class="projectlistlink" href="{{ post.url }}">
+  		Open →
+  	</a>
+  	{% endif %}
 
-
-	</div>
+</div>
