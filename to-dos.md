@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To-dos
-description: 
+description: Things I want to do with my website.
 ---
 Complete
 

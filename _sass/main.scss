@@ -298,6 +298,15 @@ img {
 
 .blogpostlinkspacing {
     margin-left: -8px;
+    justify-content: space-between;
+}
+
+.footerlinkspacing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .blogtitlespacing {
