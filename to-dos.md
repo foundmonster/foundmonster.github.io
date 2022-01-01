@@ -3,24 +3,22 @@ layout: post
 title: To-dos
 description: Things I want to do with my website.
 ---
-This page is my personal test of transparently showing my running list of things I need to fix or want to try to do with my website as a means to encourage a fluid process and accomplishment. 
+> This page is my personal test of transparently showing my running list of things I need to fix or want to try to do with my website as a means to encourage a fluid process and accomplishment. 
 
-I was inspired by Michael Nielsen's post [_"Using a personal website to enhance your ability to think and create."_](https://mnielsen.github.io/wn/website_enhance.html#fnref4)
-<br>
-<br>
-
----
-
-<br>
-**Complete**
-
-- [x] ~~All tasks for website until December 29th, 2021~~
-- [x] ~~Add public to-dos list of things I'd like to do for my website~~
-- [x] ~~Fix bullets showing on task list~~
+> I was inspired by Michael Nielsen's post [_"Using a personal website to enhance your ability to think and create."_](https://mnielsen.github.io/wn/website_enhance.html#fnref4)
 
 <br>
 **Next**
 
-- [ ] improve task list style
+- [ ] **improve task list style**<br>
+This one is turning out to be tough! I'm trying to make it so I can use markdown for these tasks, but it appears CSS doesn't do anything for these kinds of "dead" checkboxes. My attempts either don't do anything, or create usable web checkboxes. I don't want to style them so that they are usable; rather, I want to be able to "check" them in markdown and simply display its status on the site. Part of the issue is likely that I am styling them with ```list-style-type: none``` because markdown task list is showing bullets alongside the checkboxes, instead of turning the list into a checkbox list. I took to [stackoverflow](https://stackoverflow.com/questions/70546139/how-do-i-style-markdown-checklists-with-css-in-jekyll) to try to find a solution...
 - [ ] improve footer style on mobile viewport
-- [ ] create card for external links
+- [ ] create post card for external links
+
+**Complete**
+
+- [x] ~~Add and style next/previous post at the bottom of posts~~
+- [x] ~~Add public to-dos list of things I'd like to do for my website~~
+- [x] ~~Fix bullets showing on task list~~
+- [x] ~~```justify-content: space-between``` for footer links~~
+- [x] ~~make image width to match post header card width~~

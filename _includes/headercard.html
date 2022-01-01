@@ -1,8 +1,6 @@
 {% if page.image %}
 <div class="headercard-2">
-	{% if page.image %}
 	<div class="img-box" style="background-image: url({{ page.image }})"></div>
-	{% endif %}
 	<span class="postdate">{{ page.date | date: "%Y %B %e"}}</span>{% if page.tags %}<span class="posttags">&nbsp;&nbsp;•&nbsp;&nbsp;{{ page.tags }}{% endif %}
 	</span> 
 	<h2 class="headline">{{ page.title }}</h2>
