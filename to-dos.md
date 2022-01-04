@@ -3,7 +3,8 @@ layout: post
 title: To-dos
 description: Things I want to do with my website.
 ---
-> **NOTE:** This page is my personal test of transparently showing my running list of things I need to fix or want to try to do with my website as a means to encourage a fluid process and accomplishment. 
+> **NOTE:** <br>
+> This page is my personal test of transparently showing my running list of things I need to fix or want to try to do with my website as a means to encourage a fluid process and accomplishment. 
 >
 > I was inspired by Michael Nielsen's post [_"Using a personal website to enhance your ability to think and create."_](https://mnielsen.github.io/wn/website_enhance.html#fnref4)
 
@@ -20,6 +21,6 @@ This one is turning out to be tough! I'm trying to make it so I can use markdown
 - [x] ~~Add and style next/previous post at the bottom of posts~~
 - [x] ~~Add public to-dos list of things I'd like to do for my website~~
 - [x] ~~Fix bullets showing on task list~~
-- [x] ~~```justify-content: space-between``` for footer links~~ **completed 12-31-2021**
-- [x] ~~make image width to match post header card width~~ **completed 12-31-2021**
-- [x] ~~improve block quote style~~ <br>**completed 12-31-2021**
+- [x] ~~```justify-content: space-between``` for footer links~~ 
+- [x] ~~make image width to match post header card width~~ 
+- [x] ~~improve block quote style~~ 
