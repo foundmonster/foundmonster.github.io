@@ -3,7 +3,7 @@ layout: post
 title: Managing Oneself by Peter F. Drucker
 categories: post
 tags: [Book Review & Outline]
-description: Originally an article so popular that they bound it into a book.
+description: A great long-form article about professional improvement that was published as a book.
 image: /assets/images/managing-oneself.jpg
 ---
 
