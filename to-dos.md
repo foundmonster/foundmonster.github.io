@@ -17,6 +17,7 @@ This one is turning out to be tough! I'm trying to make it so I can use markdown
 - [ ] improve style of external link posts
 - [ ] **improve workflow for posts that are links to external sites**<br>
 I was able to automate post cards that are external links. It was a simple mistake in the yaml front-matter. Now, I want to figure out a way to quickly share a website I am looking at into my list of posts. It will be complicated.  The steps I see are: 1. grab the link of the website, 2. create markdown file with today's date and title, 3. input correct front-matter, 4. include link in the correct line, 5. saving the file, 6. pushing to git. I might be missing some crucial steps but that's the high-level flow as I understand it. 
+- [ ] potentially create a dedicated list of external links...
 
 **Complete**
 
