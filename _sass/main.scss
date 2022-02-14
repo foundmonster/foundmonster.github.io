@@ -478,6 +478,11 @@ a:visited {
     border-bottom: 1px solid #bb4e20;
 }
 
+
+
+
+/* BUTTON LINK */
+
 a.button-link {
     text-decoration: none;
     border: .5px solid black;
@@ -500,6 +505,7 @@ a.button-link:visited {
     padding: 1px 6px 2px 6px;
     opacity: 0.9;
 }
+
 
 
 
@@ -651,6 +657,36 @@ a:active.projectlistlink {
     opacity: 0.2;
 }
 
+
+
+
+/* NAV BUTTON LINK */
+
+a.nav-button-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background: #333;
+    margin: 1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    border-color: transparent;
+}
+
+a.nav-button-link:hover {
+    background-color: #454545;
+    color: #white;
+}
+
+a.nav-button-link:visited {
+    text-decoration: none;
+    border: .5px solid black;
+    margin: 2px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1px 6px 2px 6px;
+    opacity: 0.9;
+}
 
 
 
