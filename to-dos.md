@@ -21,6 +21,7 @@ I was able to automate post cards that are external links. It was a simple mista
 
 **Complete**
 
+- [x] ~~add primary Email button to global nav~~ 
 - [x] ~~create post card for external links~~
 - [x] ~~Add and style next/previous post at the bottom of posts~~
 - [x] ~~Add public to-dos list of things I'd like to do for my website~~
