@@ -205,9 +205,12 @@ img {
 
 blockquote {
     border-left: 4px solid #e4e4e4;
-    margin: 1em 0px;
-    padding: 0em .5em;
+    margin: 1em 1em;
+    padding: 0em .7em;
 }
+
+
+
 
 /* GRIDS */
 
@@ -674,8 +677,7 @@ a.nav-button-link {
 }
 
 a.nav-button-link:hover {
-    background-color: #454545;
-    color: #white;
+    background-color: #DFDFE3;
 }
 
 a.nav-button-link:visited {
@@ -785,6 +787,8 @@ a:active.buttonforstyleguidetest {
     font-color: rgb(115, 115, 115);
     opacity: 0.2;
 }
+
+
 
 
 /* GLOBE */
