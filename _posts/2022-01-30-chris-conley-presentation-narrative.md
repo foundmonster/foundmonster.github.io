@@ -2,7 +2,7 @@
 layout: post
 categories: post
 tags: [Blog post]
-title: A helpful presentation structure.
+title: A helpful presentation structure
 description: 
 image: 
 ---
