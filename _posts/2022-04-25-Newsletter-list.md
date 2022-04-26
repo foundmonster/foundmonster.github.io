@@ -7,15 +7,17 @@ description: There's millions of newsletters out there, and I'm sure you have a 
 image:
 external_url:
 ---
-### Nick Disabato's Mailing list
+### **Nick Disabato's Mailing list**<br>
+<br>
 
-He wrote Cadence & Slang which introduced me to UX design and helped jumpstart my career in it. He regularly brings knowledge to the industry and his newsletter is great.  
+He wrote [Cadence & Slang](https://cadence.cc) which introduced me to UX design and helped jumpstart my career in it. He regularly brings knowledge to the industry and his newsletter is great.  
 
 <br>
 <a class="button-secondary" href="https://draft.nu">Find Nick D's Newsletter Here</a>
 
 
-### Sentiers 
+### **Sentiers** <br>
+<br>
 
 Patrick Tanguay's newsletter that always opens my brain up to great and smartly written pieces about "better futures."
 
@@ -23,7 +25,8 @@ Patrick Tanguay's newsletter that always opens my brain up to great and smartly 
 <a class="button-secondary" href="https://sentiers.media">Sentiers Newsletter</a>
 
 
-### INFORMA(C)TION
+### **INFORMA(C)TION**<br>
+<br>
 
 Jorge Arango's newsletter that sends his blog posts to your inbox every so often. He is an information architect and his blogs surround this field and he helps me understand the intricacies of this work and how our complex world is always in demand of it. 
 

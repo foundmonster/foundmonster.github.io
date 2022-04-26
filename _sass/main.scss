@@ -368,7 +368,7 @@ blockquote {
 .subheadline {
     padding-top: 4px;
     padding-bottom: 12px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
 .postdate {
@@ -567,6 +567,7 @@ a:link.button-secondary {
     border-style: solid;
     border-width: 1px;
     border-color: #333;
+    text-indent: 0em;
 }
 
 a:visited.button-secondary {
