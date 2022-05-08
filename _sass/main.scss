@@ -390,6 +390,7 @@ blockquote {
 
 
 
+
 /* UNORDERED LIST AND TASK LIST */
 
 ul {
@@ -408,6 +409,21 @@ ul.task-list {
     }
 }
 
+li.current-job::marker {
+    animation: job-fading linear 3s infinite;
+}
+
+@keyframes job-fading {
+    0% {
+    opacity:0;
+    }
+    50% {
+    opacity:1;
+    }
+    100% {
+    opacity:0;
+    }
+}
 
 
 
