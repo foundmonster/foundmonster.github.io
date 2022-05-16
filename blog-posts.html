@@ -2,10 +2,12 @@
 layout: layout
 title: Posts
 ---
-<h3 class="blogtitlespacing">Posts</h3>
-<div class="projectgrid">
-	{% for post in site.categories.post %}
-	{% include postcard.html %}
-	{% endfor %}
+<div class="homepagename">
+<h2 class="headline"><b>{{ page.title }}</b></h2>
 </div>
-
+<br>
+<br>
+<ul style="padding-left: 0px">
+{% for post in site.categories.post %}
+<li style="padding-bottom: .5em"><a href="{{ post.url }}" style="font-size: 17px">{{ post.title }}</a>
+</li>{% endfor %}</ul>
