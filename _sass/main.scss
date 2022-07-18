@@ -498,6 +498,15 @@ a:visited {
 }
 
 
+.pet-numbers {
+    text-decoration: none;
+    border: .5px solid black;
+    margin: 1px;
+    border-radius: 4px;
+    padding: 1px 6px 2px 6px;
+    color: #333;
+}
+
 
 
 /* BUTTON LINK */
@@ -508,6 +517,7 @@ a.button-link {
     margin: 1px;
     border-radius: 4px;
     padding: 1px 6px 2px 6px;
+    color: #333;
 }
 
 a.button-link:hover {
