@@ -7,31 +7,11 @@ title: Cory Malnarick – Systems & UX Design
 {% endcomment %}
 <p class="home-header"><b>Systems & UX Design</b></p><br>
 <p class="home-subheader">I am a designer of digital & service products specializing in making complex systems simple & user experience design.</p>
-<br>{% comment %}
-My skills in research, analysis, strategy, and design enable a robust approach to crafting exceptional yet simple solutions for complicated, real-world problems that exceed the demands of the market, business, and customer. </p>
 <br>
-<p>I've worked on various assignments ranging from:</p>
-<ul>
-<li>Experience audits of technical, highly targeted e-commerce platforms for enterprise software products and technology</li>
-<li>A complete redesign of an account & order management system for millions of customers</li>
-<li>Research, strategy, and design of products and marketing experiences within e-commerce and physical marketplaces spanning the globe
-</li>
-</ul>
-<div class="buttongrid">
-	<div><a class="button-primary" href="/cory-malnarick-resume.pdf">CV</a></div> 
-	<div><a class="button-secondary" href="mailto:cory.malnarick@gmail.com">Contact</a></div>
-</div>{% endcomment %}
+<div class="form-background">
+<h3 class="headline"><b>Very Interesting Things</b></h3>
+<p>Receive very interesting things once a month – but never more than once a week – by entering your email below.</p><br>
 
-
-<h3 class="blogtitlespacing"> </h3>
-<div class="projectgrid">
-	{% for post in site.categories.post limit:3 %}
-	{% include postcard.html %}
-	{% endfor %}
-</div>
-<a class="navigationlink blogpostlinkspacing" href="/blog-posts.html">View All Posts →</a>
-<br>
-<br>
 <form
   action="https://buttondown.email/api/emails/embed-subscribe/foundmonster"
   method="post"
@@ -39,10 +19,22 @@ My skills in research, analysis, strategy, and design enable a robust approach t
   onsubmit="window.open('https://buttondown.email/foundmonster', 'popupwindow')"
   class="embeddable-buttondown-form"
 >
-  <label for="bd-email">Enter your email</label>
-  <input type="email" name="email" id="bd-email" />
+  <input type="email" name="email" id="bd-email" placeholder="Your Email Address"/>
   <input type="submit" value="Subscribe" />
 </form>
+</div>
+<br>
+<br>
+<br>
+<h3 class="blogtitlespacing">Blog Posts</h3>
+<div class="projectgrid">
+	{% for post in site.categories.post limit:3 %}
+	{% include postcard.html %}
+	{% endfor %}
+</div>
+<a class="navigationlink blogpostlinkspacing" href="/blog-posts.html">View All Posts →</a>
+
+
 
 {% comment %}
 <h3>Case Studies</h3>
