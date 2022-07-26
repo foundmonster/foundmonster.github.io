@@ -699,6 +699,7 @@ a.nav-button-link {
 
 a.nav-button-link:hover {
     background-color: #454545;
+    cursor: pointer!important;
 }
 
 a.nav-button-link:visited {
@@ -729,6 +730,27 @@ a.nav-button-link:visited {
     margin-right: -4rem;
     margin-left: -4rem;
     border-radius: 1rem;
+}
+
+.newsletter-email-form {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.newsletter-subscribe-button {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background: #333;
+    margin: 1px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    border-color: transparent;
+}
+
+.newsletter-subscribe-button:hover {
+    background-color: #454545;
+    cursor: pointer!important
 }
 
 
