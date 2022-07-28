@@ -319,6 +319,31 @@ blockquote {
     opacity: 1;
 }
 
+.petgrid {
+    display: grid;
+    max-width: 40rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.petgrid div {
+    position: relative;
+    padding: 0rem;
+}
+
+.behavior {
+  grid-column: 1 / span 2;
+}
+
+.petbackground {
+    background-color: #e4e4e4;
+    padding: 40px 40px;
+    border-radius: 1rem;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 2rem;
+}
+
 
 
 
@@ -497,9 +522,8 @@ a:visited {
     border-bottom: 1px solid #bb4e20;
 }
 
-
 .pet-numbers {
-    text-decoration: none;
+    text-decoration: none!important;
     border: .5px solid black;
     margin: 1px;
     border-radius: 4px;
