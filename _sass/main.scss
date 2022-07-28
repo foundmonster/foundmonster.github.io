@@ -722,19 +722,20 @@ a.nav-button-link:visited {
 
 .form-background {
     background-color: #e4e4e4;
-    padding-top: 60px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 4rem;
-    margin-top: 4rem;
-    margin-right: -4rem;
-    margin-left: -4rem;
+    padding: 40px 40px;
     border-radius: 1rem;
+    padding-top: 32px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 5rem;
 }
 
 .newsletter-email-form {
     padding: 4px 8px;
+    margin-right: 4px;
     font-size: 14px;
+    width: 66%;
+    box-sizing: border-box;
 }
 
 .newsletter-subscribe-button {
@@ -745,6 +746,8 @@ a.nav-button-link:visited {
     margin: 1px;
     border-radius: 4px;
     padding: 4px 8px;
+    width: 30%;
+    box-sizing: border-box;
     border-color: transparent;
 }
 
