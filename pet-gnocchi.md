@@ -23,8 +23,9 @@ Everything! Rabies, etc.</p>
 <a href="https://irvingpethospital.com/">Irving Pet Hospital</a></p>
 	</div>
 	<div>
-<p><b>Microchip #</b><br>
-000000000000????</p>
+<p><b>Petlink Microchip:</b><br>
+# 981020045184847<br>
+<a href="https://www.petlink.net/microchip-search/?microchip-number=981020045184847">Petlink Microchip Page</a></p>
 	</div>
 	<div class="behavior">
 		<p><b>Important note about behavior:</b><br>
@@ -37,12 +38,14 @@ Everything! Rabies, etc.</p>
 </div>
 
 <div class="petbackground">
-<b>If I am lost, please call or text my humans:</b>
+<b>If you found me without my humans:</b>
 
-<h3>Cory: <span class="pet-numbers">+1 773.456.0282</span></h3>
-
-<h3>Danielle: <span class="pet-numbers">+1 917.636.2673</span>
-</h3>
+<ol>
+<li><p>Please call or text my humans:</p>
+	<p>Cory: <span class="pet-numbers">+1 773.456.0282</span></p>
+	<p>Danielle: <span class="pet-numbers">+1 917.636.2673</span></p></li>
+<li>Report that Gnocchi has been found with Petlink <a href="https://www.petlink.net/lost-pet-gallery/report-found-pet/?microchip-number=981020045184847">here</a></li>
+</ol>
 <h1><b>VERY LARGE REWARD IF FOUND AND RETURNED SAFELY!!!</b></h1>
 </div>
 <br>
