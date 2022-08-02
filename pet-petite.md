@@ -11,8 +11,14 @@ layout: pets
 French Bulldog</p>
 	</div>
 	<div>
-<p><b>Birthday:</b><br>
-March 30, 2015</p>
+<p><b>Age & Birthday:</b><br>
+{% assign dateStart = "2015-03-30" | date: '%s' %}
+{% assign nowTimestamp = 'now' | date: '%s' %}
+
+{% assign diffSeconds = nowTimestamp | minus: dateStart %}
+{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | divided_by: 365 %}
+
+{{ diffDays | round: 0 }} years old<br> March 30, 2015</p>
 	</div>
 	<div>
 <p><b>Vaccinations:</b><br>
