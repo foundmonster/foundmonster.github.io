@@ -12,7 +12,6 @@ I started a newsletter to share things I found during casual or serious internet
   action="https://buttondown.email/api/emails/embed-subscribe/corymalnarick"
   method="post"
   target="popupwindow"
-  onsubmit="window.open('https://corymalnarick.info/very-interesting-things', 'popupwindow')"
   class="embeddable-buttondown-form"
 >
   <input type="email" name="email" id="bd-email" placeholder="Your Email Address" class="newsletter-email-form" />
