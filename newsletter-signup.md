@@ -11,7 +11,6 @@ I started a newsletter to share things I found during casual or serious internet
 <form
   action="https://buttondown.email/api/emails/embed-subscribe/corymalnarick"
   method="post"
-  target="popupwindow"
   class="embeddable-buttondown-form"
 >
   <input type="email" name="email" id="bd-email" placeholder="Your Email Address" class="newsletter-email-form" />
