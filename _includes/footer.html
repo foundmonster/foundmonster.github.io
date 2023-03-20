@@ -1,12 +1,11 @@
 <div class="footerstyle">
+{% include newsletter-form.html %}
 	<div class="footerlinkspacing">	
 		{% for item in site.data.footerlinks %}
   			<a class="navigationlink" href="{{ item.link }}">{{ item.name }}</a>
 		{% endfor %} 
 	</div>
-	<br>
-	<span class="footertext">Portfolio available upon request.</span><br>
-	<span class="footertext">&copy; Cory Malnarick 2022
+	<span class="footertext">&copy; Cory Malnarick 2023 &nbsp;•&nbsp; Portfolio available upon request.
 	</span>
 	</p>
 </div>
