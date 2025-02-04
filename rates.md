@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: layout
 title: Rates
 description: Below is my engagement process and investment levels for working with clients.
 ---
 
 
-<h1 style="margin-bottom: 24px;">Engagement Process</h1>
+<h1 style="padding-top: 80px;margin-bottom: 24px;">Engagement Process</h1>
 <div class="process-list">
   <div class="process-step">
     <div class="illustration-container">
@@ -64,7 +64,7 @@ description: Below is my engagement process and investment levels for working wi
 <h1 style="padding-top: 80px;margin-bottom: 24px;">Engagement Options</h1>
 <p>Choose the engagement model that best fits your needs and objectives.</p>
 
-<div class="engagement-grid" style="display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 40px;">
+<div class="engagement-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px;">
 
 
   <div class="info-card">
