@@ -90,7 +90,11 @@ body {
 }
 
 main {
-	flex: 1 0 auto;
+    flex: 1 0 auto;  /* Allows main to take up remaining space */
+    display: flex;  /* Makes main a flex container */
+    flex-direction: column;  /* Keeps content stacked vertically */
+    justify-content: center;  /* Centers content vertically */
+    align-items: center;  /* Centers content horizontally */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,7 +132,6 @@ p + p {
 .home-splash-wrapper {
     display: flex;
     flex-direction: row;
-    margin-top: 256px;
     align-items: baseline;
     gap: 2rem;
 }
@@ -399,6 +402,76 @@ blockquote {
 }
 
 
+
+
+
+
+/* RATES STUFF */ 
+
+.info-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-top: 0px;
+}
+
+.info-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.info-card ul {
+  list-style-type: disc;
+  margin-bottom: 24px;
+  padding-inline-start:16px;
+}
+
+.info-card li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.process-step {
+  display: flex;
+  align-items: start;
+}
+
+.illustration-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.step-details h3 {
+  font-size: 18px;
+  padding-top: 0px;
+  margin-bottom: 8px;
+  color: #your-brand-color;
+}
+
+.step-details p {
+  font-size: 14px;
+  color: #666;
+}
 
 
 
@@ -850,7 +923,7 @@ a.nav-button-link:visited {
 
 .footerstyle {
     max-width: 32rem;
-    margin-top: 120px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
