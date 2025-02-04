@@ -4,7 +4,7 @@ title: Rates
 description: Below is my engagement process and investment levels for working with clients.
 ---
 
-
+{% include availability-card.html %}
 <h1 style="padding-top: 80px;margin-bottom: 24px;">Engagement Process</h1>
 <div class="process-list">
   <div class="process-step">
@@ -12,7 +12,8 @@ description: Below is my engagement process and investment levels for working wi
       <img src="assets/svg/consultation-illustration.svg" alt="Consultation Illustration">
     </div>
     <div class="step-details">
-      <h3>Initial Consultation</h3>
+      <h3><b>01.</b><br>
+      Initial Consultation</h3>
       <p>We'll have an in-depth discussion to understand your business goals, target audience, and challenges faced with your problem. This consultation will help me tailor my approach to best fit your needs.
 </p>
     </div>
@@ -22,7 +23,8 @@ description: Below is my engagement process and investment levels for working wi
       <img src="assets/svg/proposal-illustration.svg" alt="Proposal Illustration">
     </div>
     <div class="step-details">
-      <h3>Custom Proposal</h3>
+      <h3><b>02.</b><br>
+      Custom Proposal</h3>
       <p>I will develop a custom proposal outlining the project scope, deliverables, timeline, and investment. The proposal will provide a clear roadmap for our engagement and a breakdown of the associated costs.
 </p>
     </div>
@@ -32,7 +34,8 @@ description: Below is my engagement process and investment levels for working wi
       <img src="assets/svg/kickoff-illustration.svg" alt="Kickoff Illustration">
     </div>
     <div class="step-details">
-      <h3>Project Kickoff</h3>
+      <h3><b>03.</b><br>
+      Project Kickoff</h3>
       <p>We'll have a kickoff meeting to review project goals, timeline, and expectations, establish communication channels, and set the stage for a successful partnership.
 </p>
     </div>
@@ -42,7 +45,8 @@ description: Below is my engagement process and investment levels for working wi
       <img src="assets/svg/updates-illustration.svg" alt="Updates Illustration">
     </div>
     <div class="step-details">
-      <h3>Regular Check-ins</h3>
+      <h3><b>04.</b><br>
+      Regular Check-ins</h3>
       <p>Throughout the project, we'll have regular check-in meetings to keep you informed of the progress, gather your feedback, and address any issues or concerns.
 </p>
     </div>
@@ -52,7 +56,8 @@ description: Below is my engagement process and investment levels for working wi
       <img src="assets/svg/deliverables-illustration.svg" alt="Deliverables Illustration">
     </div>
     <div class="step-details">
-      <h3>Clear Deliverables</h3>
+      <h3><b>05.</b><br>
+      Clear Deliverables</h3>
       <p>At the end of each project phase, I'll provide you with clear and comprehensive deliverables, including detailed documentation and a handoff meeting to discuss the next steps.</p>
     </div>
   </div>

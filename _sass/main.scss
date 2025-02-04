@@ -408,6 +408,80 @@ blockquote {
 
 /* RATES STUFF */ 
 
+.availability-card {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 64rem;
+    margin: 2rem auto;
+}
+
+.availability-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: #111827;
+    padding-top: 0px;
+}
+
+.availability-card p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    color: #374151;
+}
+
+.availability-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+.availability-card input,
+.availability-card textarea {
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: white;
+}
+
+.availability-card input {
+    flex: 1;
+}
+
+.availability-card textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+.availability-card button {
+    background-color: #1f2937;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.availability-card button:hover {
+    background-color: #374151;
+}
+
 .info-card {
   background-color: #f5f5f5;
   border-radius: 8px;
@@ -443,7 +517,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .process-step {
@@ -452,8 +526,8 @@ blockquote {
 }
 
 .illustration-container {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
