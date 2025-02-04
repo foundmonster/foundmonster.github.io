@@ -63,7 +63,7 @@ description: Below is my engagement process and investment levels for working wi
   </div>
 </div>
 
-
+{% include availability-card.html %}
 
 
 <h1 style="padding-top: 80px;margin-bottom: 24px;">Engagement Options</h1>
@@ -113,3 +113,4 @@ description: Below is my engagement process and investment levels for working wi
       
   </div>
 </div>
+{% include availability-card.html %}
