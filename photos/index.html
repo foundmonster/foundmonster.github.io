@@ -1,0 +1,21 @@
+---
+layout: photos
+title: Photos
+permalink: /photos/
+---
+
+<div class="breadcrumbs">
+  <span>Photos</span>
+</div>
+
+<div class="gallery-grid">
+  {% for gallery in site.data.galleries %}
+  <div class="gallery-card" onclick="window.location.href='/photos/{{ gallery.slug }}/'">
+    <img src="{{ gallery.cover_image }}" alt="{{ gallery.name }}" onerror="this.src='/assets/images/placeholder.jpg'">
+    <div class="gallery-card-content">
+      <h3>{{ gallery.name }}</h3>
+      <p>{{ gallery.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>

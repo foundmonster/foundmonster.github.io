@@ -1,0 +1,169 @@
+---
+layout: gallery
+title: "Travel Memories"
+permalink: /photos/travel-memories/
+---
+
+{% for gallery in site.data.galleries %}
+  {% if gallery.slug == "travel-memories" %}
+    <div class="breadcrumbs">
+      <a href="/photos/">Photos</a>
+      <span class="separator">/</span>
+      <span>{{ gallery.name }}</span>
+    </div>
+
+    <p>{{ gallery.description }}</p>
+
+    <div class="photo-grid">
+      {% for photo in gallery.photos %}
+      <div class="photo-item" onclick="openPhotoModal('{{ photo.filename }}', '{{ photo.title }}', '{{ photo.description }}', '{{ photo.date }}', '{{ photo.location }}', {{ forloop.index0 }})">
+        <img src="/assets/images/{{ photo.filename }}" alt="{{ photo.title }}" onerror="this.src='/assets/images/placeholder.jpg'">
+      </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Photo Modal -->
+<div id="photoModal" class="photo-modal">
+  <div class="photo-modal-close" onclick="closePhotoModal()">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM8.46447 9.46447C8.26921 9.26921 8.26921 8.95263 8.46447 8.75736C8.65973 8.5621 8.97631 8.5621 9.17157 8.75736L12 11.5858L14.8284 8.75736C15.0237 8.5621 15.3403 8.5621 15.5355 8.75736C15.7308 8.95263 15.7308 9.26921 15.5355 9.46447L12.7071 12.2929L15.5355 15.1213C15.7308 15.3166 15.7308 15.6332 15.5355 15.8284C15.3403 16.0237 15.0237 16.0237 14.8284 15.8284L12 13L9.17157 15.8284C8.97631 16.0237 8.65973 16.0237 8.46447 15.8284C8.26921 15.6332 8.26921 15.3166 8.46447 15.1213L11.2929 12.2929L8.46447 9.46447Z" fill="#FFFFFF"/>
+    </svg>
+  </div>
+  <div class="photo-modal-nav prev" id="prevBtn" onclick="previousPhoto()">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM6.2623 12.6375C6.08743 12.4648 6 12.2523 6 12C6 11.7521 6.08743 11.5418 6.2623 11.3692L10.3082 7.27224C10.4 7.18371 10.4962 7.11731 10.5967 7.07304C10.7016 7.02435 10.8066 7 10.9115 7C11.1607 7 11.3617 7.07747 11.5148 7.2324C11.6721 7.38734 11.7508 7.58212 11.7508 7.81673C11.7508 7.94511 11.7246 8.0602 11.6721 8.16202C11.624 8.26383 11.5628 8.35237 11.4885 8.42762L10.0984 9.84861L8.6159 11.2239L9.99344 11.1501H17.1213C17.3836 11.1501 17.5956 11.2297 17.7574 11.3891C17.9191 11.544 18 11.7477 18 12C18 12.2568 17.9191 12.4648 17.7574 12.6242C17.5956 12.7835 17.3836 12.8632 17.1213 12.8632H9.99344L8.61906 12.7857L10.0984 14.158L11.4885 15.5724C11.5628 15.6476 11.624 15.7384 11.6721 15.8446C11.7246 15.9464 11.7508 16.0615 11.7508 16.1899C11.7508 16.4201 11.6721 16.6127 11.5148 16.7676C11.3617 16.9225 11.1607 17 10.9115 17C10.6929 17 10.494 16.9115 10.3148 16.7344L6.2623 12.6375Z" fill="#FFFFFF"/>
+    </svg>
+  </div>
+  <div class="photo-modal-nav next" id="nextBtn" onclick="nextPhoto()">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM17.7377 11.3625C17.9126 11.5352 18 11.7477 18 12C18 12.2479 17.9126 12.4582 17.7377 12.6308L13.6918 16.7278C13.6 16.8163 13.5038 16.8827 13.4033 16.927C13.2984 16.9757 13.1934 17 13.0885 17C12.8393 17 12.6383 16.9225 12.4852 16.7676C12.3279 16.6127 12.2492 16.4179 12.2492 16.1833C12.2492 16.0549 12.2754 15.9398 12.3279 15.838C12.376 15.7362 12.4372 15.6476 12.5115 15.5724L13.9016 14.1514L15.3841 12.7761L14.0066 12.8499H6.87869C6.61639 12.8499 6.40437 12.7703 6.24262 12.6109C6.08087 12.456 6 12.2523 6 12C6 11.7432 6.08087 11.5352 6.24262 11.3758C6.40437 11.2165 6.61639 11.1368 6.87869 11.1368H14.0066L15.3809 11.2143L13.9016 9.84196L12.5115 8.42762C12.4372 8.35237 12.376 8.26162 12.3279 8.15538C12.2754 8.05356 12.2492 7.93847 12.2492 7.81009C12.2492 7.5799 12.3279 7.38734 12.4852 7.2324C12.6383 7.07747 12.8393 7 13.0885 7C13.3071 7 13.506 7.08853 13.6852 7.2656L17.7377 11.3625Z" fill="#FFFFFF"/>
+    </svg>
+  </div>
+  <div class="photo-modal-content">
+    <img id="modalImage" src="" alt="">
+    <div class="photo-modal-details">
+      <span id="modalTitle"></span>
+      <span id="modalLocation"></span>
+      <span id="modalDate"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+let currentPhotoIndex = 0;
+let galleryPhotos = [];
+
+// Initialize gallery photos from the page data
+{% for gallery in site.data.galleries %}
+  {% if gallery.slug == "travel-memories" %}
+    {% for photo in gallery.photos %}
+galleryPhotos.push({
+  filename: '{{ photo.filename }}',
+  title: '{{ photo.title }}',
+  description: '{{ photo.description }}',
+  date: '{{ photo.date }}',
+  location: '{{ photo.location }}'
+});
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+function openPhotoModal(filename, title, description, date, location, photoIndex) {
+  currentPhotoIndex = photoIndex;
+  const modal = document.getElementById('photoModal');
+  
+  const photo = {
+    filename: filename,
+    title: title,
+    description: description,
+    date: date,
+    location: location
+  };
+  
+  updateModalContent(photo);
+  updateNavigationButtons();
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePhotoModal() {
+  const modal = document.getElementById('photoModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+function previousPhoto() {
+  if (currentPhotoIndex > 0) {
+    currentPhotoIndex--;
+    const photo = galleryPhotos[currentPhotoIndex];
+    updateModalContent(photo);
+    updateNavigationButtons();
+  }
+}
+
+function nextPhoto() {
+  if (currentPhotoIndex < galleryPhotos.length - 1) {
+    currentPhotoIndex++;
+    const photo = galleryPhotos[currentPhotoIndex];
+    updateModalContent(photo);
+    updateNavigationButtons();
+  }
+}
+
+function updateModalContent(photo) {
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDate = document.getElementById('modalDate');
+  const modalLocation = document.getElementById('modalLocation');
+  
+  modalImage.src = '/assets/images/' + photo.filename;
+  modalImage.alt = photo.title;
+  modalTitle.textContent = photo.title;
+  modalLocation.textContent = photo.location;
+  modalDate.textContent = photo.date;
+}
+
+function updateNavigationButtons() {
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  
+  if (currentPhotoIndex === 0) {
+    prevBtn.classList.add('disabled');
+  } else {
+    prevBtn.classList.remove('disabled');
+  }
+  
+  if (currentPhotoIndex === galleryPhotos.length - 1) {
+    nextBtn.classList.add('disabled');
+  } else {
+    nextBtn.classList.remove('disabled');
+  }
+}
+
+// Close modal when clicking outside the image
+document.getElementById('photoModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closePhotoModal();
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closePhotoModal();
+  }
+});
+
+// Arrow key navigation
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('photoModal').classList.contains('active')) {
+    if (e.key === 'ArrowLeft') {
+      previousPhoto();
+    } else if (e.key === 'ArrowRight') {
+      nextPhoto();
+    }
+  }
+});
+</script>
