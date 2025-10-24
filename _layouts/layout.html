@@ -21,43 +21,6 @@
   <main>
     {{ content }}
   </main> 
-    <script>
-        // Contact form handling
-        const contactForm = document.getElementById('contactForm');
-        const submitButton = document.getElementById('submitButton');
-        const contactMessage = document.getElementById('contactMessage');
-
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-
-            try {
-                const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    contactMessage.textContent = "Thanks for reaching out! I'll get back to you within two business days.";
-                    contactMessage.className = 'form-message success';
-                    contactForm.reset();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            } catch (error) {
-                contactMessage.textContent = "Oops! There was a problem sending your message. Please try again or email me directly.";
-                contactMessage.className = 'form-message error';
-            }
-
-            submitButton.disabled = false;
-            submitButton.textContent = 'Start a Conversation';
-        });
-    </script>
 </body>
 
 <footer>
