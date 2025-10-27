@@ -1,0 +1,266 @@
+---
+layout: layout
+title: Last.fm Card Explorations – Cory Malnarick
+---
+
+<!-- Last.fm Section V1 -->
+<div class="lastfm-section">
+	<div class="form-background">
+		<div class="form-headline">Recent Music Listening (V1)</div>
+		<div id="lastfm-info-v1" class="lastfm-info"></div>
+		<div id="lastfm-tracks-v1" class="lastfm-tracks"></div>
+	</div>
+</div>
+
+<!-- Last.fm Section V2 -->
+<div class="lastfm-section">
+	<div class="form-background">
+		<div class="form-headline">Recent Music Listening (V2)</div>
+		<div id="lastfm-info-v2" class="lastfm-info"></div>
+		<div id="lastfm-tracks-v2" class="lastfm-tracks"></div>
+	</div>
+</div>
+
+<!-- Last.fm Section V3 -->
+<div class="lastfm-section">
+	<div class="form-background">
+		<div class="form-headline">Recent Music Listening (V3)</div>
+		<div id="lastfm-info-v3" class="lastfm-info"></div>
+		<div id="lastfm-tracks-v3" class="lastfm-tracks"></div>
+	</div>
+</div>
+
+<!-- Last.fm Section V4 (no background) -->
+<div class="lastfm-section">
+	<div class="form-headline">Recent Music Listening (V4)</div>
+	<div id="lastfm-info-v4" class="lastfm-info"></div>
+	<div id="lastfm-tracks-v4" class="lastfm-tracks"></div>
+</div>
+
+<!-- Last.fm Section V5 (no background) -->
+<div class="lastfm-section">
+	<div class="form-headline">Recent Music Listening (V5)</div>
+	<div id="lastfm-info-v5" class="lastfm-info"></div>
+	<div id="lastfm-tracks-v5" class="lastfm-tracks"></div>
+</div>
+
+<!-- Last.fm Section V6 (no background, 3-column) -->
+<div class="lastfm-section">
+	<div class="form-headline">Recent Music Listening (V6)</div>
+	<div id="lastfm-info-v6" class="lastfm-info"></div>
+	<div id="lastfm-tracks-v6" class="lastfm-tracks-v6"></div>
+</div>
+
+<script>
+// Last.fm API Integration
+const LASTFM_API_KEY = 'b085777665ddf18be32e8f4495393923';
+const LASTFM_USERNAME = 'saeglopur';
+
+async function fetchLastFmDataForExplorations() {
+	try {
+		// Fetch user info
+		const userInfoResponse = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=${LASTFM_USERNAME}&api_key=${LASTFM_API_KEY}&format=json`);
+		const userInfoData = await userInfoResponse.json();
+		
+		// Fetch recent tracks
+		const recentTracksResponse = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${LASTFM_USERNAME}&user=${LASTFM_USERNAME}&api_key=${LASTFM_API_KEY}&limit=5&format=json`);
+		const recentTracksData = await recentTracksResponse.json();
+		
+		// Display user info
+		if (userInfoData.user) {
+			const user = userInfoData.user;
+			const signupDate = new Date(parseInt(user.registered.unixtime) * 1000).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+			
+			const userInfoHTML = `<p>${parseInt(user.playcount).toLocaleString()} <a href="https://www.last.fm/user/${LASTFM_USERNAME}" style="text-decoration: none; color: #333; border-bottom: 1px solid #333;">scrobbles</a> since ${signupDate}</p>`;
+			
+			document.getElementById('lastfm-info-v1').innerHTML = userInfoHTML;
+			document.getElementById('lastfm-info-v2').innerHTML = userInfoHTML;
+			document.getElementById('lastfm-info-v3').innerHTML = userInfoHTML;
+			document.getElementById('lastfm-info-v4').innerHTML = userInfoHTML;
+			document.getElementById('lastfm-info-v5').innerHTML = userInfoHTML;
+			document.getElementById('lastfm-info-v6').innerHTML = userInfoHTML;
+		}
+		
+		// Display recent tracks
+		if (recentTracksData.recenttracks && recentTracksData.recenttracks.track) {
+			const tracks = recentTracksData.recenttracks.track.slice(0, 5);
+			const firstTrack = tracks[0];
+			const isNowPlaying = !firstTrack.date || !firstTrack.date.uts;
+			
+			// Generate V1 HTML (with dots and red dot indicator)
+			let v1HTML = '';
+			tracks.forEach((track, index) => {
+				const artist = track.artist['#text'];
+				const trackName = track.name;
+				let scrobbledTime = 'Now playing';
+				
+				if (track.date && track.date.uts) {
+					const date = new Date(parseInt(track.date.uts) * 1000);
+					scrobbledTime = date.toLocaleString('en-US', { 
+						year: 'numeric', 
+						month: 'short', 
+						day: 'numeric', 
+						hour: 'numeric', 
+						minute: '2-digit' 
+					});
+				}
+				
+				if (isNowPlaying && index === 0) {
+					v1HTML += `
+						<p class="scrobble-row now-playing-row">
+							<span class="live-indicator"></span>
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span> <span class="scrobble-time">Now playing</span>
+							</span>
+						</p>
+					`;
+				} else if (!isNowPlaying || index > 0) {
+					v1HTML += `
+						<p class="scrobble-row">
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span> <span class="scrobble-time">${scrobbledTime}</span>
+							</span>
+						</p>
+					`;
+				}
+			});
+			document.getElementById('lastfm-tracks-v1').innerHTML = v1HTML;
+			document.getElementById('lastfm-tracks-v4').innerHTML = v1HTML;
+			
+			// Generate V2 HTML (with dots, pulsing "Now playing" text)
+			let v2HTML = '';
+			tracks.forEach((track, index) => {
+				const artist = track.artist['#text'];
+				const trackName = track.name;
+				let scrobbledTime = 'Now playing';
+				
+				if (track.date && track.date.uts) {
+					const date = new Date(parseInt(track.date.uts) * 1000);
+					scrobbledTime = date.toLocaleString('en-US', { 
+						year: 'numeric', 
+						month: 'short', 
+						day: 'numeric', 
+						hour: 'numeric', 
+						minute: '2-digit' 
+					});
+				}
+				
+				if (isNowPlaying && index === 0) {
+					v2HTML += `
+						<p class="scrobble-row now-playing-row-exploration-v2">
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span> <span class="scrobble-time">Now playing</span>
+							</span>
+						</p>
+					`;
+				} else if (!isNowPlaying || index > 0) {
+					v2HTML += `
+						<p class="scrobble-row">
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span> <span class="scrobble-time">${scrobbledTime}</span>
+							</span>
+						</p>
+					`;
+				}
+			});
+			document.getElementById('lastfm-tracks-v2').innerHTML = v2HTML;
+			
+			// Generate V3 HTML (date/time below song, right-aligned)
+			let v3HTML = '';
+			tracks.forEach((track, index) => {
+				const artist = track.artist['#text'];
+				const trackName = track.name;
+				let scrobbledTime = 'Now playing';
+				
+				if (track.date && track.date.uts) {
+					const date = new Date(parseInt(track.date.uts) * 1000);
+					scrobbledTime = date.toLocaleString('en-US', { 
+						year: 'numeric', 
+						month: 'short', 
+						day: 'numeric', 
+						hour: 'numeric', 
+						minute: '2-digit' 
+					});
+				}
+				
+				if (isNowPlaying && index === 0) {
+					v3HTML += `
+						<p class="scrobble-row now-playing-row-exploration-v3">
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span>
+								<div class="scrobble-time" style="color: #bb4e20 !important; animation: textPulse 2s ease-in-out infinite;">Now playing</div>
+							</span>
+						</p>
+					`;
+				} else if (!isNowPlaying || index > 0) {
+					v3HTML += `
+						<p class="scrobble-row">
+							<span class="scrobble-artist">${artist}</span>
+							<span class="scrobble-dots"></span>
+							<span class="scrobble-right">
+								<span class="scrobble-song">${trackName}</span>
+								<div class="scrobble-time">${scrobbledTime}</div>
+							</span>
+						</p>
+					`;
+				}
+			});
+			document.getElementById('lastfm-tracks-v3').innerHTML = v3HTML;
+			document.getElementById('lastfm-tracks-v5').innerHTML = v3HTML;
+			
+			// Generate V6 HTML (3-column layout, no dots)
+			let v6HTML = '';
+			tracks.forEach((track, index) => {
+				const artist = track.artist['#text'];
+				const trackName = track.name;
+				let scrobbledTime = 'Now playing';
+				
+				if (track.date && track.date.uts) {
+					const date = new Date(parseInt(track.date.uts) * 1000);
+					scrobbledTime = date.toLocaleString('en-US', { 
+						year: 'numeric', 
+						month: 'short', 
+						day: 'numeric', 
+						hour: 'numeric', 
+						minute: '2-digit' 
+					});
+				}
+				
+				if (isNowPlaying && index === 0) {
+					v6HTML += `
+						<p class="scrobble-row-v6 now-playing-row-v6">
+							<span class="scrobble-artist-v6">${artist}</span>
+							<span class="scrobble-song-v6">${trackName}</span>
+							<span class="scrobble-time-v6">Now playing</span>
+						</p>
+					`;
+				} else if (!isNowPlaying || index > 0) {
+					v6HTML += `
+						<p class="scrobble-row-v6">
+							<span class="scrobble-artist-v6">${artist}</span>
+							<span class="scrobble-song-v6">${trackName}</span>
+							<span class="scrobble-time-v6">${scrobbledTime}</span>
+						</p>
+					`;
+				}
+			});
+			document.getElementById('lastfm-tracks-v6').innerHTML = v6HTML;
+		}
+	} catch (error) {
+		console.error('Error fetching Last.fm data:', error);
+	}
+}
+
+// Fetch data on page load
+fetchLastFmDataForExplorations();
+</script>

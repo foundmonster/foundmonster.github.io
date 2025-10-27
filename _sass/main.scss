@@ -77,9 +77,9 @@ button-unique-kind-of-button-style {
 
 body {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 360px);
     flex-direction: column;
-    margin: auto;
+    margin: 360px auto 0 auto;
     font-family: aktiv-grotesk, sans-serif;
 	font-style: normal;
     max-width: 32rem;
@@ -87,14 +87,13 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     animation: 1s content-fade-in;
-    justify-content: center;
+    position: relative;
 }
 
 main {
 	flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -154,6 +153,11 @@ p + p {
 }
 
 @media (max-width: 485px) {
+    body {
+        margin: 160px auto 0 auto !important;
+        min-height: calc(100vh - 160px) !important;
+    }
+
     .home-splash-wrapper {
         display: flex           !important;
         flex-direction: column  !important;
@@ -824,6 +828,12 @@ a.nav-button-link:visited {
     padding-bottom: 8px;
 }
 
+.social-section-headline {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
 .newsletter-email-form {
     padding: 4px 8px;
     margin-right: 16px;
@@ -868,6 +878,7 @@ a.nav-button-link:visited {
 
 .footerstyle {
     max-width: 32rem;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -1083,8 +1094,32 @@ a:active.buttonforstyleguidetest {
 .photo-grid {
     column-count: 3;
     column-gap: 24px;
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 80px;
+}
+
+.lastfm-section .photo-grid-masonry {
+    column-count: 2;
+    column-gap: 16px;
+    column-fill: auto;
+    orphans: 1;
+    widows: 1;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.lastfm-section .photo-grid-masonry .photo-item {
+    margin-bottom: 16px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+}
+
+@media (max-width: 485px) {
+    .lastfm-section .photo-grid-masonry {
+        column-count: 1;
+    }
 }
 
 .photo-item {
@@ -1345,4 +1380,233 @@ a:active.buttonforstyleguidetest {
 
 .globe {
     position: relative;
+}
+
+/* LAST.FM SECTION */
+
+.lastfm-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.lastfm-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 8px;
+}
+
+.lastfm-tracks p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 0;
+}
+
+.lastfm-tracks {
+    .scrobble-row {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+    }
+    
+    .scrobble-artist {
+        flex: 0 0 auto;
+    }
+    
+    .scrobble-dots {
+        flex: 1;
+        border-bottom: 1px dotted #333;
+        height: 1em;
+        margin: 0 4px;
+    }
+    
+    .scrobble-right {
+        flex: 0 0 auto;
+    }
+    
+    .scrobble-song {
+        margin-right: 8px;
+    }
+    
+    .scrobble-time {
+        color: #666;
+        font-size: 12px;
+    }
+    
+    .now-playing-row {
+        position: relative;
+    }
+    
+    .live-indicator {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: #bb4e20;
+        border-radius: 50%;
+        margin-right: 8px;
+        animation: pulse 2s ease-in-out infinite;
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .now-playing-row-exploration {
+        margin-bottom: 8px !important;
+        position: relative;
+        background-color: rgba(187, 78, 32, 0.1);
+        border-radius: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        animation: backgroundPulse 2s ease-in-out infinite;
+    }
+    
+    .now-playing-row-exploration-v2 {
+        margin-bottom: 8px !important;
+        position: relative;
+    }
+    
+    .now-playing-row-exploration-v2 .scrobble-time {
+        color: #bb4e20;
+        animation: textPulse 2s ease-in-out infinite;
+    }
+    
+    #lastfm-tracks-exploration-v3 .scrobble-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .now-playing-row-exploration-v3 {
+        position: relative;
+    }
+}
+
+#lastfm-tracks-exploration-v3 .scrobble-song {
+    margin-right: 0 !important;
+}
+
+#lastfm-tracks-exploration-v3 .scrobble-right div.scrobble-time {
+    display: block;
+    margin-top: 2px;
+    text-align: right !important;
+}
+
+#lastfm-tracks-exploration-v3 .now-playing-row-exploration-v3 .scrobble-right div.scrobble-time {
+    color: #bb4e20 !important;
+    animation: textPulse 2s ease-in-out infinite !important;
+}
+
+/* Remove background and margins for duplicate sections and index page */
+.lastfm-section:has(#lastfm-info-duplicate),
+.lastfm-section:has(#lastfm-info-exploration-v3-duplicate),
+.lastfm-section:has(#lastfm-info-exploration-v2-v6),
+.lastfm-section:has(#lastfm-info-index) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#lastfm-info-duplicate,
+#lastfm-info-exploration-v3-duplicate,
+#lastfm-info-exploration-v2-v6,
+#lastfm-info-index {
+    padding: 0;
+    margin-bottom: 8px;
+    background: none;
+}
+
+#lastfm-tracks-duplicate,
+#lastfm-tracks-exploration-v3-duplicate,
+#lastfm-tracks-exploration-v2-v6,
+#lastfm-tracks-index {
+    padding: 0;
+    background: none;
+}
+
+/* Remove background for explorations page versions V4, V5, V6 */
+.lastfm-section:has(#lastfm-info-v4),
+.lastfm-section:has(#lastfm-info-v5),
+.lastfm-section:has(#lastfm-info-v6) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#lastfm-info-v4,
+#lastfm-info-v5,
+#lastfm-info-v6 {
+    padding: 0;
+    margin-bottom: 8px;
+    background: none;
+}
+
+#lastfm-tracks-v4,
+#lastfm-tracks-v5,
+#lastfm-tracks-v6 {
+    padding: 0;
+    background: none;
+}
+
+/* V6 - Three column layout (Artist | Song | Date/Time) */
+.lastfm-tracks-v6 {
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-bottom: 0;
+    }
+    
+    .scrobble-row-v6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        align-items: baseline;
+    }
+    
+    .scrobble-artist-v6 {
+        text-align: left;
+    }
+    
+    .scrobble-song-v6 {
+        text-align: left;
+    }
+    
+    .scrobble-time-v6 {
+        color: #666;
+        font-size: 12px;
+        text-align: right;
+    }
+    
+    .now-playing-row-v6 .scrobble-time-v6 {
+        color: #bb4e20;
+        animation: textPulse 2s ease-in-out infinite;
+        text-align: right;
+    }
+}
+
+@keyframes backgroundPulse {
+    0%, 100% {
+        background-color: rgba(187, 78, 32, 0.1);
+    }
+    50% {
+        background-color: rgba(187, 78, 32, 0.2);
+    }
+}
+
+@keyframes textPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
