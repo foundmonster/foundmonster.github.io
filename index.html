@@ -99,19 +99,6 @@ async function fetchLastFmDataForIndex() {
 fetchLastFmDataForIndex();
 </script>
 
-<!-- VSCO Photos Section -->
-<div class="lastfm-section">
-	<div class="social-section-headline">Recent Photos</div>
-	<div class="photo-grid-masonry">
-		{% for photo in site.data.vsco limit:6 %}
-		<div class="photo-item">
-			<a href="{{ photo.permalink }}" target="_blank" rel="noopener noreferrer">
-				<img src="{{ photo.url }}" alt="VSCO Photo" loading="lazy">
-			</a>
-		</div>
-		{% endfor %}
-	</div>
-</div>
 
 {% comment %}
 <br>
